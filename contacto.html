@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto – PLEXIA</title>
+  <meta name="description" content="Contactate con PLEXIA. Estamos disponibles para escuchar tu desafío y explorar cómo podemos ayudarte." />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo"><img src="img/logo-h.png" alt="PLEXIA" style="height:60px;width:auto;" /></a>
+    <ul class="nav__links" role="list">
+      <li><a href="index.html"       class="nav__link" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="nosotros.html"    class="nav__link" data-i18n="nav_about">Nosotros</a></li>
+      <li><a href="servicios.html"   class="nav__link" data-i18n="nav_services">Servicios</a></li>
+      <li><a href="sectores.html"    class="nav__link" data-i18n="nav_industries">Sectores</a></li>
+      <li><a href="contacto.html"    class="nav__link" data-i18n="nav_contact">Contacto</a></li>
+    </ul>
+    <div class="nav__actions">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn"        data-lang="en">EN</button>
+      </div>
+      <a href="contacto.html" class="btn btn-primary" data-i18n="nav_cta">Hablemos</a>
+    </div>
+    <button class="nav__burger" id="nav-burger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html"     class="mobile-menu__link" data-i18n="nav_home">Inicio</a>
+  <a href="nosotros.html"  class="mobile-menu__link" data-i18n="nav_about">Nosotros</a>
+  <a href="servicios.html" class="mobile-menu__link" data-i18n="nav_services">Servicios</a>
+  <a href="sectores.html"  class="mobile-menu__link" data-i18n="nav_industries">Sectores</a>
+  <a href="contacto.html"  class="mobile-menu__link" data-i18n="nav_contact">Contacto</a>
+  <div class="mobile-menu__divider"></div>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="es">ES</button>
+    <button class="lang-btn"        data-lang="en">EN</button>
+  </div>
+</div>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html" data-i18n="nav_home">Inicio</a>
+      <span>›</span>
+      <span data-i18n="nav_contact">Contacto</span>
+    </nav>
+    <p class="section-label">Escribinos</p>
+    <h1 data-i18n="contact_title">Contacto</h1>
+    <p class="lead" data-i18n="contact_lead">Estamos disponibles para escuchar tu desafío y explorar juntos cómo podemos ayudarte.</p>
+  </div>
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact Cards -->
+      <div class="contact-info fade-up">
+        <h2 style="margin-bottom:.5rem;" data-i18n="contact_reach_title">¿Cómo podemos ayudarte?</h2>
+        <p style="margin-bottom:2rem;" data-i18n="contact_reach_text">Ya sea que estés buscando una consultoría inicial, un equipo de desarrollo, o una solución integral de transformación digital, somos el partner tecnológico que tu organización necesita.</p>
+
+        <div class="contact-card" id="contact-email-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <p class="contact-card__title" data-i18n="contact_email_title">E-mail</p>
+            <p class="contact-card__value"><a href="mailto:contacto@plexia.com.ar">contacto@plexia.com.ar</a></p>
+            <p style="font-size:.82rem;color:var(--text-muted);margin-top:.25rem;" data-i18n="contact_email_desc">Escribinos y te respondemos a la brevedad.</p>
+          </div>
+        </div>
+
+        <div class="contact-card" id="contact-location-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <p class="contact-card__title" data-i18n="contact_location_title">Ubicación</p>
+            <p class="contact-card__value" data-i18n="contact_location_val">Argentina</p>
+          </div>
+        </div>
+
+        <div class="contact-card" id="contact-web-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="contact-card__title">Web</p>
+            <p class="contact-card__value"><a href="https://www.plexia.com.ar">www.plexia.com.ar</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Visual side -->
+      <div class="contact-visual fade-up">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:2rem;">
+          <img src="img/logo.png" alt="PLEXIA" style="height:130px;opacity:.9;" />
+          <div style="text-align:center;">
+            <h3 style="font-size:1.3rem;color:var(--blue-dark);margin-bottom:.5rem;"></h3>
+            <p style="font-size:.9rem;color:var(--text-muted);font-weight:500;">Consultoría y Servicios IT</p>
+          </div>
+          <div style="width:100%;max-width:280px;display:flex;flex-direction:column;gap:.75rem;">
+            <div style="display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;background:var(--white);border-radius:var(--radius-md);border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);">
+              <span style="font-size:1.2rem;">✉️</span>
+              <span style="font-size:.88rem;font-weight:600;color:var(--text-main);">contacto@plexia.com.ar</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;background:var(--white);border-radius:var(--radius-md);border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);">
+              <span style="font-size:1.2rem;">🌐</span>
+              <span style="font-size:.88rem;font-weight:600;color:var(--text-main);">www.plexia.com.ar</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;background:var(--white);border-radius:var(--radius-md);border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);">
+              <span style="font-size:1.2rem;">📍</span>
+              <span style="font-size:.88rem;font-weight:600;color:var(--text-main);">Argentina</span>
+            </div>
+          </div>
+          <a href="mailto:contacto@plexia.com.ar" class="btn btn-primary" id="contact-email-btn" style="margin-top:.5rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Envianos un mail
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="img/logo-h.png" alt="PLEXIA" style="height:40px;width:auto;filter:brightness(0) invert(1);" />
+        <p data-i18n="footer_tag">Consultoría y Servicios IT</p>
+        <p style="margin-top:.5rem;" data-i18n="footer_desc">Innovación tecnológica a la medida de cada cliente.</p>
+      </div>
+      <div>
+        <p class="footer__heading" data-i18n="footer_menu">Menú</p>
+        <ul class="footer__links">
+          <li><a href="index.html"       data-i18n="nav_home">Inicio</a></li>
+          <li><a href="nosotros.html"    data-i18n="nav_about">Nosotros</a></li>
+          <li><a href="servicios.html"   data-i18n="nav_services">Servicios</a></li>
+          <li><a href="sectores.html"    data-i18n="nav_industries">Sectores</a></li>
+          <li><a href="contacto.html"    data-i18n="nav_contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__heading" data-i18n="footer_contact_title">Contacto</p>
+        <ul class="footer__links">
+          <li><a href="mailto:contacto@plexia.com.ar" data-i18n="footer_email">contacto@plexia.com.ar</a></li>
+          <li><span data-i18n="footer_location">Argentina</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer_copy">© 2025 Plexia. Todos los derechos reservados.</span>
+      <span>www.plexia.com.ar</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

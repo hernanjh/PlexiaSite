@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sectores – PLEXIA</title>
+  <meta name="description" content="PLEXIA brinda servicios IT a los sectores de Banca, SGR, Telecomunicaciones, Energía y Gobierno." />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .sector-card-large {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      transition: all var(--transition);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .sector-card-large:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--blue-light);
+    }
+    .sector-card-large__visual {
+      position: relative;
+      min-height: 320px;
+      overflow: hidden;
+    }
+    .sector-card-large__visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .6s ease;
+    }
+    .sector-card-large:hover .sector-card-large__visual img {
+      transform: scale(1.04);
+    }
+    .sector-card-large__content { padding: 2.5rem; }
+    .sector-tag {
+      display: inline-block;
+      padding: .3rem .8rem;
+      border-radius: 100px;
+      font-size: .75rem;
+      font-weight: 700;
+      background: var(--blue-pale);
+      color: var(--blue-dark);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .sector-card-large__content h3 { font-size: 1.35rem; margin-bottom: .75rem; }
+    .sector-card-large__content p { font-size: .92rem; line-height: 1.7; }
+    .sector-points { display: flex; flex-direction: column; gap: .5rem; margin-top: 1.25rem; }
+    .sector-point {
+      display: flex;
+      gap: .6rem;
+      align-items: flex-start;
+      font-size: .88rem;
+      color: var(--text-muted);
+    }
+    .sector-point::before {
+      content: '→';
+      color: var(--blue-light);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    @media (max-width: 768px) {
+      .sector-card-large { grid-template-columns: 1fr; }
+      .sector-card-large__visual { min-height: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo"><img src="img/logo-h.png" alt="PLEXIA" style="height:60px;width:auto;" /></a>
+    <ul class="nav__links" role="list">
+      <li><a href="index.html"       class="nav__link" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="nosotros.html"    class="nav__link" data-i18n="nav_about">Nosotros</a></li>
+      <li><a href="servicios.html"   class="nav__link" data-i18n="nav_services">Servicios</a></li>
+      <li><a href="sectores.html"    class="nav__link" data-i18n="nav_industries">Sectores</a></li>
+      <li><a href="contacto.html"    class="nav__link" data-i18n="nav_contact">Contacto</a></li>
+    </ul>
+    <div class="nav__actions">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn"        data-lang="en">EN</button>
+      </div>
+      <a href="contacto.html" class="btn btn-primary" data-i18n="nav_cta">Hablemos</a>
+    </div>
+    <button class="nav__burger" id="nav-burger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html"     class="mobile-menu__link" data-i18n="nav_home">Inicio</a>
+  <a href="nosotros.html"  class="mobile-menu__link" data-i18n="nav_about">Nosotros</a>
+  <a href="servicios.html" class="mobile-menu__link" data-i18n="nav_services">Servicios</a>
+  <a href="sectores.html"  class="mobile-menu__link" data-i18n="nav_industries">Sectores</a>
+  <a href="contacto.html"  class="mobile-menu__link" data-i18n="nav_contact">Contacto</a>
+  <div class="mobile-menu__divider"></div>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="es">ES</button>
+    <button class="lang-btn"        data-lang="en">EN</button>
+  </div>
+</div>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html" data-i18n="nav_home">Inicio</a>
+      <span>›</span>
+      <span data-i18n="nav_industries">Sectores</span>
+    </nav>
+    <p class="section-label" data-i18n="industries_label">Sectores que atendemos</p>
+    <h1 data-i18n="industries_title">Presencia en múltiples industrias</h1>
+    <p class="lead" data-i18n="page_sectors_lead">Adaptamos nuestros servicios a las características, regulaciones y desafíos propios de cada sector.</p>
+  </div>
+</header>
+
+<!-- SECTORS DETAIL -->
+<section class="section">
+  <div class="container" style="display:flex;flex-direction:column;gap:2.5rem;">
+
+    <!-- BANCA -->
+    <div class="sector-card-large fade-up" id="sector-banca">
+      <div class="sector-card-large__visual">
+        <img src="img/sector-banca.png" alt="Sector Banca" />
+      </div>
+      <div class="sector-card-large__content">
+        <span class="sector-tag" data-i18n="ind1">Banca</span>
+        <h3 data-i18n="sector_banca_title">Transformación Digital en el Sistema Financiero</h3>
+        <p data-i18n="sector_banca_text">El sector bancario enfrenta desafíos únicos: regulación estricta, transformación digital acelerada y altas exigencias de seguridad.</p>
+        <div class="sector-points">
+          <div class="sector-point" data-i18n="sector_banca_p1">Alineación a normativas BCRA 7724 y complementarias</div>
+          <div class="sector-point" data-i18n="sector_banca_p2">Implementación de ISO 27001 y gestión de seguridad de la información</div>
+          <div class="sector-point" data-i18n="sector_banca_p3">Modernización de core bancario y canales digitales</div>
+          <div class="sector-point" data-i18n="sector_banca_p4">Gobierno de datos financieros y analytics</div>
+          <div class="sector-point" data-i18n="sector_banca_p5">Continuidad del negocio según ISO 22301</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SGR -->
+    <div class="sector-card-large fade-up" id="sector-sgr" style="direction:rtl;">
+      <div class="sector-card-large__visual" style="direction:ltr;">
+        <img src="img/sector-sgr.png" alt="Sector SGR" />
+      </div>
+      <div class="sector-card-large__content" style="direction:ltr;">
+        <span class="sector-tag" data-i18n="ind2">SGR</span>
+        <h3 data-i18n="sector_sgr_title">Sistemas de Garantía Recíproca</h3>
+        <p data-i18n="sector_sgr_text">Las SGRs operan en un entorno altamente regulado con demandas crecientes de digitalización.</p>
+        <div class="sector-points">
+          <div class="sector-point" data-i18n="sector_sgr_p1">Digitalización de procesos de garantías</div>
+          <div class="sector-point" data-i18n="sector_sgr_p2">Sistemas de gestión de socios y avalados</div>
+          <div class="sector-point" data-i18n="sector_sgr_p3">Reporting regulatorio automatizado</div>
+          <div class="sector-point" data-i18n="sector_sgr_p4">Plataformas de análisis de riesgo crediticio</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TELCO -->
+    <div class="sector-card-large fade-up" id="sector-telco">
+      <div class="sector-card-large__visual">
+        <img src="img/sector-telco.png" alt="Sector Telecomunicaciones" />
+      </div>
+      <div class="sector-card-large__content">
+        <span class="sector-tag" data-i18n="ind3">Telecomunicaciones</span>
+        <h3 data-i18n="sector_telco_title">Agilidad y escalabilidad en TELCO</h3>
+        <p data-i18n="sector_telco_text">Las telcos necesitan velocidad de innovación y robustez operativa. Ayudamos a diseñar arquitecturas escalables y acelerar el despliegue de nuevos servicios.</p>
+        <div class="sector-points">
+          <div class="sector-point" data-i18n="sector_telco_p1">Arquitecturas Cloud-native y microservicios</div>
+          <div class="sector-point" data-i18n="sector_telco_p2">DevOps y CI/CD para ciclos de release acelerados</div>
+          <div class="sector-point" data-i18n="sector_telco_p3">Gestión de servicios ITIL y mejora de NOC/SOC</div>
+          <div class="sector-point" data-i18n="sector_telco_p4">Data governance y analytics de clientes</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENERGÍA -->
+    <div class="sector-card-large fade-up" id="sector-energia" style="direction:rtl;">
+      <div class="sector-card-large__visual" style="direction:ltr;">
+        <img src="img/sector-energia.png" alt="Sector Energía" />
+      </div>
+      <div class="sector-card-large__content" style="direction:ltr;">
+        <span class="sector-tag" data-i18n="ind4">Energía</span>
+        <h3 data-i18n="sector_energia_title">Transformación Digital en Utilities y Energía</h3>
+        <p data-i18n="sector_energia_text">El sector energético evoluciona hacia modelos más inteligentes y conectados. Acompañamos en la digitalización de operaciones y cumplimiento normativo.</p>
+        <div class="sector-points">
+          <div class="sector-point" data-i18n="sector_energia_p1">Digitalización de operaciones y activos físicos</div>
+          <div class="sector-point" data-i18n="sector_energia_p2">Sistemas de medición inteligente (Smart Metering)</div>
+          <div class="sector-point" data-i18n="sector_energia_p3">Gestión de riesgos y continuidad operativa</div>
+          <div class="sector-point" data-i18n="sector_energia_p4">Integración de sistemas SCADA con plataformas IT</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOBIERNO -->
+    <div class="sector-card-large fade-up" id="sector-gobierno">
+      <div class="sector-card-large__visual">
+        <img src="img/sector-gobierno.png" alt="Sector Gobierno" />
+      </div>
+      <div class="sector-card-large__content">
+        <span class="sector-tag" data-i18n="ind5">Gobierno</span>
+        <h3 data-i18n="sector_gobierno_title">Tecnología al servicio del Estado</h3>
+        <p data-i18n="sector_gobierno_text">Los organismos públicos requieren transformación digital con especial atención a la transparencia, seguridad y accesibilidad.</p>
+        <div class="sector-points">
+          <div class="sector-point" data-i18n="sector_gobierno_p1">Alineación a DA 641 y normativa de organismos públicos</div>
+          <div class="sector-point" data-i18n="sector_gobierno_p2">Gobierno de TI y modernización de sistemas legacy</div>
+          <div class="sector-point" data-i18n="sector_gobierno_p3">Gobierno de datos y apertura de información</div>
+          <div class="sector-point" data-i18n="sector_gobierno_p4">Gestión de continuidad y recuperación ante desastres</div>
+          <div class="sector-point" data-i18n="sector_gobierno_p5">Capacitación y gestión del cambio organizacional</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PYMES -->
+    <div class="sector-card-large fade-up" id="sector-pymes" style="direction:rtl;">
+      <div class="sector-card-large__visual" style="direction:ltr;">
+        <img src="img/sector-pymes.png" alt="Sector Pymes" />
+      </div>
+      <div class="sector-card-large__content" style="direction:ltr;">
+        <span class="sector-tag" data-i18n="ind6">Pymes</span>
+        <h3 data-i18n="sector_pymes_title">Innovación y competitividad para Pymes</h3>
+        <p data-i18n="sector_pymes_text">Las pequeñas y medianas empresas requieren soluciones ágiles y rentables. Acompañamos su crecimiento mediante tecnología accesible y escalable que optimiza sus procesos clave.</p>
+        <div class="sector-points">
+          <div class="sector-point" data-i18n="sector_pymes_p1">Digitalización de procesos operativos y comerciales</div>
+          <div class="sector-point" data-i18n="sector_pymes_p2">Adopción de herramientas Cloud para trabajo colaborativo</div>
+          <div class="sector-point" data-i18n="sector_pymes_p3">Implementación de software de gestión ERP y CRM</div>
+          <div class="sector-point" data-i18n="sector_pymes_p4">Ciberseguridad y protección de datos adaptada</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <h2 data-i18n="cta_title">¿Listo para transformar tu organización?</h2>
+      <p data-i18n="cta_text">Conversemos sobre cómo podemos ayudarte a alcanzar tus objetivos tecnológicos.</p>
+      <a href="contacto.html" class="btn btn-light" data-i18n="cta_btn">Hablar con un experto</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="img/logo-h.png" alt="PLEXIA" style="height:40px;width:auto;filter:brightness(0) invert(1);" />
+        <p style="margin-top:.75rem;" data-i18n="footer_tag">Consultoría y Servicios IT</p>
+        <p style="margin-top:.5rem;" data-i18n="footer_desc">Innovación tecnológica a la medida de cada cliente.</p>
+      </div>
+      <div>
+        <p class="footer__heading" data-i18n="footer_menu">Menú</p>
+        <ul class="footer__links">
+          <li><a href="index.html"       data-i18n="nav_home">Inicio</a></li>
+          <li><a href="nosotros.html"    data-i18n="nav_about">Nosotros</a></li>
+          <li><a href="servicios.html"   data-i18n="nav_services">Servicios</a></li>
+          <li><a href="sectores.html"    data-i18n="nav_industries">Sectores</a></li>
+          <li><a href="contacto.html"    data-i18n="nav_contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__heading" data-i18n="footer_contact_title">Contacto</p>
+        <ul class="footer__links">
+          <li><a href="mailto:contacto@plexia.com.ar" data-i18n="footer_email">contacto@plexia.com.ar</a></li>
+          <li><span data-i18n="footer_location">Argentina</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer_copy">© 2025 Plexia. Todos los derechos reservados.</span>
+      <span>www.plexia.com.ar</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

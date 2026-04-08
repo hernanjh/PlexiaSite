@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLEXIA – Consultoría y Servicios IT</title>
+  <meta name="description" content="PLEXIA ofrece innovación tecnológica a las necesidades de sus clientes. Consultoría digital, Cloud, Gobierno de TI, desarrollo a medida y más." />
+  <meta property="og:title" content="PLEXIA – Consultoría y Servicios IT" />
+  <meta property="og:description" content="Innovación tecnológica a la medida de tu negocio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.plexia.com.ar" />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ─── Navigation ──────────────────────────────────────────── -->
+<nav class="nav" id="main-nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="PLEXIA – Inicio">
+      <img src="img/logo-h.png" alt="PLEXIA" style="height:60px;width:auto;" />
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="index.html"       class="nav__link" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="nosotros.html"    class="nav__link" data-i18n="nav_about">Nosotros</a></li>
+      <li><a href="servicios.html"   class="nav__link" data-i18n="nav_services">Servicios</a></li>
+      <li><a href="sectores.html"    class="nav__link" data-i18n="nav_industries">Sectores</a></li>
+      <li><a href="contacto.html"    class="nav__link" data-i18n="nav_contact">Contacto</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <div class="lang-switcher" role="group" aria-label="Cambiar idioma">
+        <button class="lang-btn active" data-lang="es" aria-label="Español">ES</button>
+        <button class="lang-btn"        data-lang="en" aria-label="English">EN</button>
+      </div>
+      <a href="contacto.html" class="btn btn-primary" data-i18n="nav_cta">Hablemos</a>
+    </div>
+
+    <button class="nav__burger" id="nav-burger" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ─── Mobile Menu ──────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menú móvil">
+  <a href="index.html"     class="mobile-menu__link" data-i18n="nav_home">Inicio</a>
+  <a href="nosotros.html"  class="mobile-menu__link" data-i18n="nav_about">Nosotros</a>
+  <a href="servicios.html" class="mobile-menu__link" data-i18n="nav_services">Servicios</a>
+  <a href="sectores.html"  class="mobile-menu__link" data-i18n="nav_industries">Sectores</a>
+  <a href="contacto.html"  class="mobile-menu__link" data-i18n="nav_contact">Contacto</a>
+  <div class="mobile-menu__divider"></div>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="es">ES</button>
+    <button class="lang-btn"        data-lang="en">EN</button>
+  </div>
+</div>
+
+<!-- ─── Hero ────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero__grid">
+
+      <div class="hero__content">
+        <p class="hero__subtitle" data-i18n="hero_label">Consultoría &amp; Servicios IT</p>
+        <h1 class="hero__title">
+          <span data-i18n="hero_title_1">Innovación tecnológica</span><br>
+          <em data-i18n="hero_title_2">a la medida de tu negocio</em>
+        </h1>
+        <p class="hero__text" data-i18n="hero_text">
+          Somos una empresa que ofrece innovación tecnológica a las necesidades de sus clientes, con foco en resultados, agilidad y calidad.
+        </p>
+        <div class="hero__actions">
+          <a href="servicios.html" class="btn btn-primary" id="hero-btn-services" data-i18n="hero_btn1">Ver servicios</a>
+          <a href="contacto.html"  class="btn btn-outline" id="hero-btn-contact"  data-i18n="hero_btn2">Contactarnos</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__pattern"></div>
+        <div class="hero__card-stack">
+          <!-- Main floating card -->
+          <div class="hero-card hero-card--main">
+            <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem;">
+              <div style="width:40px;height:40px;border-radius:10px;background:var(--blue-pale);display:flex;align-items:center;justify-content:center;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div>
+                <div style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-400);" data-i18n="hero_card_label">Time to market</div>
+                <div style="font-size:1.1rem;font-weight:800;color:var(--blue-dark);">−40%</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
+              <span class="pill">Scrum</span>
+              <span class="pill">DevOps CI/CD</span>
+              <span class="pill">Cloud</span>
+              <span class="pill">ISO 27001</span>
+            </div>
+            <div style="margin-top:1.25rem;height:6px;background:var(--gray-100);border-radius:100px;overflow:hidden;">
+              <div style="height:100%;width:72%;background:linear-gradient(90deg,var(--blue-dark),var(--blue-light));border-radius:100px;"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-top:.4rem;">
+              <span style="font-size:.75rem;color:var(--text-muted);" data-i18n="hero_card_sprint">Progreso del sprint</span>
+              <span style="font-size:.75rem;font-weight:700;color:var(--blue-dark);">72%</span>
+            </div>
+          </div>
+
+          <!-- Secondary floating card -->
+          <div class="hero-card hero-card--secondary" style="bottom:-1.5rem;right:-1.5rem;padding:1rem 1.25rem;max-width:200px;">
+            <div style="display:flex;align-items:center;gap:.6rem;">
+              <div style="width:32px;height:32px;border-radius:8px;background:var(--blue-dark);display:flex;align-items:center;justify-content:center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:.7rem;font-weight:600;color:var(--text-muted);" data-i18n="hero_card_compliance">Cumplimiento</div>
+                <div style="font-size:.95rem;font-weight:800;color:var(--text-main);">ISO 27001 ✓</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ─── Services ─────────────────────────────────────────────── -->
+<section class="section" id="servicios">
+  <div class="container">
+    <div style="text-align:center;max-width:600px;margin:0 auto 1rem;">
+      <p class="section-label" data-i18n="services_label">Lo que hacemos</p>
+      <h2 data-i18n="services_title">Nuestros Servicios</h2>
+      <p style="margin-top:.75rem;" data-i18n="services_subtitle">Soluciones integrales de tecnología para acelerar la transformación digital de tu organización.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <a href="servicio-consultoria.html" class="service-card fade-up" id="svc-card-1">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title" data-i18n="svc1_title">Consultoría Estratégica e Innovación Digital</h3>
+        <p class="service-card__text" data-i18n="svc1_text">Diagnóstico, mapeo, documentación, modelado y automatización de procesos en Sistemas, Tecnología y Seguridad de la Información.</p>
+        <span class="service-card__link" data-i18n="svc_more">Ver detalle →</span>
+      </a>
+
+      <a href="servicio-datos-cloud.html" class="service-card fade-up" id="svc-card-2">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title" data-i18n="svc2_title">Gobierno de Datos &amp; Cloud</h3>
+        <p class="service-card__text" data-i18n="svc2_text">Definición e implementación de estrategias de Data Governance. Gestión de datos y administración en ambientes Cloud.</p>
+        <span class="service-card__link" data-i18n="svc_more">Ver detalle →</span>
+      </a>
+
+      <a href="servicio-normativa.html" class="service-card fade-up" id="svc-card-3">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title" data-i18n="svc3_title">Normativa BCRA &amp; Gobierno de TI</h3>
+        <p class="service-card__text" data-i18n="svc3_text">Alineación a BCRA 7724, ISO 27001/2, ITIL/ISO 20000, CMMI. Gestión de Riesgos y Continuidad basados en ISO 22301.</p>
+        <span class="service-card__link" data-i18n="svc_more">Ver detalle →</span>
+      </a>
+
+      <a href="servicio-proyectos.html" class="service-card fade-up" id="svc-card-4">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title" data-i18n="svc4_title">Proyectos Digitales a Medida</h3>
+        <p class="service-card__text" data-i18n="svc4_text">Software Factory y desarrollo a medida con metodologías ágiles. Seguimiento paso a paso con equipos de Staff Augmentation.</p>
+        <span class="service-card__link" data-i18n="svc_more">Ver detalle →</span>
+      </a>
+
+      <a href="servicio-cloud-infra.html" class="service-card fade-up" id="svc-card-5">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/>
+            <line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title" data-i18n="svc5_title">Cloud &amp; Infraestructura</h3>
+        <p class="service-card__text" data-i18n="svc5_text">Arquitectura, migración, soporte, configuración, innovación, entrenamiento y seguridad en la nube.</p>
+        <span class="service-card__link" data-i18n="svc_more">Ver detalle →</span>
+      </a>
+
+      <a href="servicio-procesos.html" class="service-card fade-up" id="svc-card-6">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/>
+            <path d="M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title" data-i18n="svc6_title">Procesos TI &amp; Administración</h3>
+        <p class="service-card__text" data-i18n="svc6_text">Monitoreo de Riesgos TI, Gestión del Cambio, Continuidad del Negocio y Recuperación ante Desastres.</p>
+        <span class="service-card__link" data-i18n="svc_more">Ver detalle →</span>
+      </a>
+
+      <a href="servicio-ia.html" class="service-card fade-up" id="svc-card-7">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a2 2 0 012 2v2a2 2 0 01-2 2 2 2 0 01-2-2V4a2 2 0 012-2z"/>
+            <path d="M12 16a2 2 0 012 2v2a2 2 0 01-2 2 2 2 0 01-2-2v-2a2 2 0 012-2z"/>
+            <path d="M4.93 4.93a2 2 0 012.83 0l1.41 1.41a2 2 0 010 2.83 2 2 0 01-2.83 0L4.93 7.76a2 2 0 010-2.83z"/>
+            <path d="M14.83 14.83a2 2 0 012.83 0l1.41 1.41a2 2 0 010 2.83 2 2 0 01-2.83 0l-1.41-1.41a2 2 0 010-2.83z"/>
+            <path d="M2 12a2 2 0 012-2h2a2 2 0 012 2 2 2 0 01-2 2H4a2 2 0 01-2-2z"/>
+            <path d="M16 12a2 2 0 012-2h2a2 2 0 012 2 2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title" data-i18n="svc7_title">Automatización &amp; Inteligencia Artificial</h3>
+        <p class="service-card__text" data-i18n="svc7_text">Incorporamos IA y automatización de procesos para potenciar la eficiencia operativa, reducir tiempos y escalar soluciones de manera inteligente.</p>
+        <span class="service-card__link" data-i18n="svc_more">Ver detalle →</span>
+      </a>
+
+      <a href="servicio-iot.html" class="service-card fade-up" id="svc-card-8">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="2 12 7 12 10 3 14 21 17 12 22 12"></polyline>
+          </svg>
+        </div>
+        <h3 class="service-card__title" data-i18n="svc8_title">Internet of Things (IoT) &amp; Smart Cities</h3>
+        <p class="service-card__text" data-i18n="svc8_text">Soluciones de medición, calidad de ambiente, telemetría y despliegue de sensores para entornos industriales y ciudades.</p>
+        <span class="service-card__link" data-i18n="svc_more">Ver detalle →</span>
+      </a>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── About Teaser ──────────────────────────────────────────── -->
+<section class="section" style="background:var(--off-white);border-top:1px solid var(--gray-200);border-bottom:1px solid var(--gray-200);">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="fade-up">
+        <p class="section-label" data-i18n="about_label">¿Quiénes somos?</p>
+        <h2 data-i18n="about_title">Experiencia y metodología al servicio del cambio</h2>
+        <p style="margin-top:1rem;margin-bottom:2rem;" data-i18n="about_text">
+          Contamos con profesionales de variado conocimiento para hacer frente a los desafíos de cada cliente.
+        </p>
+        <div class="methodology-pills">
+          <span class="pill">Scrum</span>
+          <span class="pill">Lean</span>
+          <span class="pill">DevOps</span>
+          <span class="pill">CI/CD</span>
+          <span class="pill">Staff Aug.</span>
+          <span class="pill">Software Factory</span>
+        </div>
+        <a href="nosotros.html" class="btn btn-outline" style="margin-top:2rem;" id="about-more-btn" data-i18n="about_link">Conocé más sobre nosotros</a>
+      </div>
+
+      <div class="about__blocks fade-up">
+        <div class="about__block">
+          <div class="about__block-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="about__block-title" data-i18n="about_b1_title">Metodología Ágil</p>
+            <p class="about__block-text" data-i18n="about_b1_text">Scrum, Proceso Unificado de Desarrollo y Lean para optimizar el time to market.</p>
+          </div>
+        </div>
+        <div class="about__block">
+          <div class="about__block-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div>
+            <p class="about__block-title" data-i18n="about_b2_title">Calidad Incorporada</p>
+            <p class="about__block-text" data-i18n="about_b2_text">Desarrollo seguro y pipelines DevOps CI/CD garantizan calidad en cada entrega.</p>
+          </div>
+        </div>
+        <div class="about__block">
+          <div class="about__block-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <div>
+            <p class="about__block-title" data-i18n="about_b3_title">Equipo Experto</p>
+            <p class="about__block-text" data-i18n="about_b3_text">Profesionales certificados con amplia experiencia en el ecosistema tecnológico.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Industries ────────────────────────────────────────────── -->
+<section class="section industries-section">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <p class="section-label" data-i18n="industries_label">Sectores que atendemos</p>
+      <h2 data-i18n="industries_title">Presencia en múltiples industrias</h2>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card fade-up">
+        <span class="industry-card__icon">🏦</span>
+        <p class="industry-card__name" data-i18n="ind1">Banca</p>
+      </div>
+      <div class="industry-card fade-up">
+        <span class="industry-card__icon">🤝</span>
+        <p class="industry-card__name" data-i18n="ind2">SGR</p>
+      </div>
+      <div class="industry-card fade-up">
+        <span class="industry-card__icon">📡</span>
+        <p class="industry-card__name" data-i18n="ind3">Telecomunicaciones</p>
+      </div>
+      <div class="industry-card fade-up">
+        <span class="industry-card__icon">⚡</span>
+        <p class="industry-card__name" data-i18n="ind4">Energía</p>
+      </div>
+      <div class="industry-card fade-up">
+        <span class="industry-card__icon">🏛️</span>
+        <p class="industry-card__name" data-i18n="ind5">Gobierno</p>
+      </div>
+      <div class="industry-card fade-up">
+        <span class="industry-card__icon">🏪</span>
+        <p class="industry-card__name" data-i18n="ind6">Pymes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA Banner ────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <h2 data-i18n="cta_title">¿Listo para transformar tu organización?</h2>
+      <p data-i18n="cta_text">Conversemos sobre cómo podemos ayudarte a alcanzar tus objetivos tecnológicos.</p>
+      <a href="contacto.html" class="btn btn-light" id="cta-main-btn" data-i18n="cta_btn">Hablar con un experto</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ────────────────────────────────────────────────── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="img/logo-h.png" alt="PLEXIA" style="height:40px;width:auto;filter:brightness(0) invert(1);" />
+        <p style="margin-top:.75rem;" data-i18n="footer_tag">Consultoría y Servicios IT</p>
+        <p style="margin-top:.5rem;" data-i18n="footer_desc">Innovación tecnológica a la medida de cada cliente.</p>
+      </div>
+      <div>
+        <p class="footer__heading" data-i18n="footer_menu">Menú</p>
+        <ul class="footer__links">
+          <li><a href="index.html"       data-i18n="nav_home">Inicio</a></li>
+          <li><a href="nosotros.html"    data-i18n="nav_about">Nosotros</a></li>
+          <li><a href="servicios.html"   data-i18n="nav_services">Servicios</a></li>
+          <li><a href="sectores.html"    data-i18n="nav_industries">Sectores</a></li>
+          <li><a href="contacto.html"    data-i18n="nav_contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__heading" data-i18n="footer_contact_title">Contacto</p>
+        <ul class="footer__links">
+          <li><a href="mailto:contacto@plexia.com.ar" data-i18n="footer_email">contacto@plexia.com.ar</a></li>
+          <li><span data-i18n="footer_location">Argentina</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer_copy">© 2025 Plexia. Todos los derechos reservados.</span>
+      <span>www.plexia.com.ar</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
