@@ -105,8 +105,8 @@ const dkEn = {
 
   dk_who_label: 'Who it’s for',
   dk_who_title: 'Built for those whose business is recovering credit',
-  dk_who1_t: 'Mutual guarantee companies',
-  dk_who1_p: 'Recovery of paid guarantees and counter-guarantee tracking.',
+  dk_who1_t: 'Service companies',
+  dk_who1_p: 'Unpaid subscriptions, service plans and invoices.',
   dk_who2_t: 'Lenders & fintech',
   dk_who2_p: 'Loan portfolios with a high volume of cases.',
   dk_who3_t: 'Mutuals & cooperatives',
