@@ -206,7 +206,21 @@
     </div>
     <figure class="dk-shot dk-shot--wide fade-up">
       <div class="dk-window"><div class="dk-window__bar"><i></i><i></i><i></i><b>diakos / clientes</b></div>
-        <img src="img/pantalla-clientes.png" width="1590" height="930" loading="lazy" alt="Pantalla de Diakos con el listado de clientes, su estado y el flujo de gestión de cada uno" />
+        <div class="dk-list" aria-hidden="true">
+          <div class="dk-list__tools">
+            <span class="dk-list__search">⌕ <span data-i18n="dk_ls_search">Buscar cliente, documento o legajo…</span></span>
+            <span class="dk-list__chip dk-list__chip--on" data-i18n="dk_ls_f1">Todos</span>
+            <span class="dk-list__chip" data-i18n="dk_ls_f2">En gestión</span>
+            <span class="dk-list__chip" data-i18n="dk_ls_f3">Con acuerdo</span>
+            <span class="dk-list__chip" data-i18n="dk_ls_f4">Judicial</span>
+          </div>
+          <div class="dk-list__row dk-list__row--head"><span data-i18n="dk_ls_h1">Cliente</span><span data-i18n="dk_ls_h2">Atraso</span><span data-i18n="dk_ls_h3">Deuda</span><span data-i18n="dk_ls_h4">Etapa</span></div>
+          <div class="dk-list__row"><span class="dk-list__who"><i style="background:#1F5F5B">LV</i><span><b>Lácteos del Valle S.A.</b><small data-i18n="dk_ls_r1">3 contratos · Córdoba</small></span></span><span><em class="dk-list__late" style="--w:78%;--c:#A82A22"></em><small class="num">74 d</small></span><span class="num">$ 1.284.500,00</span><span><em class="dk-badge dk-badge--warn" data-i18n="dk_ls_s1">Promesa de pago</em></span></div>
+          <div class="dk-list__row"><span class="dk-list__who"><i style="background:#E0A54A">RM</i><span><b>Rosario Motors S.R.L.</b><small data-i18n="dk_ls_r2">1 contrato · Santa Fe</small></span></span><span><em class="dk-list__late" style="--w:32%;--c:#D08A2E"></em><small class="num">28 d</small></span><span class="num">$ 356.900,00</span><span><em class="dk-badge dk-badge--teal" data-i18n="dk_ls_s2">En gestión</em></span></div>
+          <div class="dk-list__row"><span class="dk-list__who"><i style="background:#5B4B9A">PA</i><span><b>Patagonia Austral S.A.</b><small data-i18n="dk_ls_r3">2 contratos · Neuquén</small></span></span><span><em class="dk-list__late" style="--w:100%;--c:#5B4B9A"></em><small class="num">132 d</small></span><span class="num">$ 4.970.000,00</span><span><em class="dk-badge dk-badge--legal" data-i18n="dk_ls_s3">Judicial</em></span></div>
+          <div class="dk-list__row"><span class="dk-list__who"><i style="background:#141A2E">SG</i><span><b>Sofía Giménez</b><small data-i18n="dk_ls_r4">1 contrato · CABA</small></span></span><span><em class="dk-list__late" style="--w:12%;--c:#1E7A4C"></em><small class="num">9 d</small></span><span class="num">$ 98.450,00</span><span><em class="dk-badge dk-badge--ok" data-i18n="dk_ls_s4">Con acuerdo</em></span></div>
+          <div class="dk-list__row"><span class="dk-list__who"><i style="background:#2A7A74">TN</i><span><b>Transportes Norte S.A.</b><small data-i18n="dk_ls_r5">4 contratos · Salta</small></span></span><span><em class="dk-list__late" style="--w:55%;--c:#A82A22"></em><small class="num">61 d</small></span><span class="num">$ 2.115.300,00</span><span><em class="dk-badge dk-badge--teal" data-i18n="dk_ls_s2">En gestión</em></span></div>
+        </div>
       </div>
       <figcaption data-i18n="dk_shot1_cap">Toda la cartera a la vista: buscás, filtrás, exportás y ves en qué etapa está cada cliente.</figcaption>
     </figure>
@@ -275,7 +289,26 @@
       </div>
       <figure class="dk-shot fade-up">
         <div class="dk-window"><div class="dk-window__bar"><i></i><i></i><i></i><b>diakos / calculadora</b></div>
-          <img src="img/pantalla-calculadora.png" width="1242" height="847" loading="lazy" alt="Calculadora de refinanciación de Diakos con el cuadro de cuotas de un plan de pago" />
+        <div class="dk-cal" aria-hidden="true">
+          <div class="dk-cal__form">
+            <label><span data-i18n="dk_cl_l1">Deuda a refinanciar</span><b class="num">$ 2.400.000,00</b></label>
+            <label><span data-i18n="dk_cl_l2">Tasa anual</span><b class="num">60,00 %</b></label>
+            <label><span data-i18n="dk_cl_l3">Cuotas</span><b class="num">12</b><em class="dk-cal__slider"><i style="width:20%"></i></em></label>
+            <label><span data-i18n="dk_cl_l4">Primer vencimiento</span><b class="num">05/11/2026</b></label>
+          </div>
+          <div class="dk-cal__out">
+            <div class="dk-cal__kpis">
+              <div><small data-i18n="dk_cl_k1">Cuota fija</small><strong class="num">$ 270.780,98</strong></div>
+              <div><small data-i18n="dk_cl_k2">Total a pagar</small><strong class="num">$ 3.249.371,81</strong></div>
+              <div><small data-i18n="dk_cl_k3">Costo efectivo</small><strong class="num gold">79,59 %</strong></div>
+            </div>
+            <div class="dk-cal__chart">
+              <div class="dk-cal__bars"><div class="dk-cal__bar" title="Cuota 1"><i style="height:44.3%"></i><b style="height:55.7%"></b></div><div class="dk-cal__bar" title="Cuota 2"><i style="height:41.5%"></i><b style="height:58.5%"></b></div><div class="dk-cal__bar" title="Cuota 3"><i style="height:38.6%"></i><b style="height:61.4%"></b></div><div class="dk-cal__bar" title="Cuota 4"><i style="height:35.5%"></i><b style="height:64.5%"></b></div><div class="dk-cal__bar" title="Cuota 5"><i style="height:32.3%"></i><b style="height:67.7%"></b></div><div class="dk-cal__bar" title="Cuota 6"><i style="height:28.9%"></i><b style="height:71.1%"></b></div><div class="dk-cal__bar" title="Cuota 7"><i style="height:25.4%"></i><b style="height:74.6%"></b></div><div class="dk-cal__bar" title="Cuota 8"><i style="height:21.6%"></i><b style="height:78.4%"></b></div><div class="dk-cal__bar" title="Cuota 9"><i style="height:17.7%"></i><b style="height:82.3%"></b></div><div class="dk-cal__bar" title="Cuota 10"><i style="height:13.6%"></i><b style="height:86.4%"></b></div><div class="dk-cal__bar" title="Cuota 11"><i style="height:9.3%"></i><b style="height:90.7%"></b></div><div class="dk-cal__bar" title="Cuota 12"><i style="height:4.8%"></i><b style="height:95.2%"></b></div></div>
+              <div class="dk-cal__legend"><span><i class="cap"></i><span data-i18n="dk_cl_lg1">Capital</span></span><span><i class="int"></i><span data-i18n="dk_cl_lg2">Interés</span></span></div>
+            </div>
+            <div class="dk-cal__actions"><span class="dk-cal__btn" data-i18n="dk_cl_b1">Crear acuerdo</span><span class="dk-cal__btn dk-cal__btn--ghost" data-i18n="dk_cl_b2">Preacuerdo PDF</span></div>
+          </div>
+        </div>
         </div>
         <figcaption data-i18n="dk_shot2_cap">Calculadora de refinanciación: cuotas, intereses y costo financiero al instante, y el preacuerdo en PDF.</figcaption>
       </figure>
