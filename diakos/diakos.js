@@ -15,10 +15,10 @@ const dkEn = {
   dk_nav_faq: 'FAQ',
   dk_cta_demo: 'Request a demo',
 
-  dk_hero_eyebrow: 'Delinquency & collections management',
+  dk_hero_eyebrow: 'Credit & delinquency management · Multi-currency',
   dk_hero_t1: 'Recover more,',
   dk_hero_t2: 'with less effort.',
-  dk_hero_text: 'Diakos is the platform to manage delinquency and credit recovery: your whole portfolio, every collection activity and every payment agreement in one place, so your team always knows what to do next and with whom.',
+  dk_hero_text: 'Diakos is the multi-currency platform to manage credit and delinquency: your whole portfolio, every collection activity and every payment agreement in one place, so your team always knows what to do next and with whom.',
   dk_hero_btn2: 'See how it works',
   dk_hero_n1: '100% web-based',
   dk_hero_n2: 'Adapts to your process',
@@ -170,7 +170,7 @@ const dkEn = {
   dk_final_text: 'We’ll walk you through the platform with a case like yours and answer all your questions.',
   dk_final_btn2: 'Ask a question',
 
-  dk_footer_desc: 'Delinquency management and credit recovery.',
+  dk_footer_desc: 'Credit and delinquency management, multi-currency.',
   dk_footer_by: 'A Plexia product.',
   dk_footer_product: 'Product',
   dk_footer_contact: 'Contact',
