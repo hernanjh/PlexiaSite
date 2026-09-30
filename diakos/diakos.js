@@ -313,7 +313,6 @@ const dkEn = {
   dk_chip8: 'Per-system credentials',
   dk_chip9: 'Webhooks',
   dk_chip10: 'Import & export',
-  dk_final_wa: 'Or message Diego on WhatsApp: +54 9 11 3422-5536',
   dk_ls_search: 'Search client, ID or case file…',
   dk_ls_f1: 'All',
   dk_ls_f2: 'In collection',

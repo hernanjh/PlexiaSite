@@ -386,8 +386,6 @@ body.dk {
 .dk-strip__inner span { font-family: var(--font-alt); font-size: clamp(1.2rem, 2.4vw, 1.6rem); font-weight: 700; }
 .dk-strip__inner span:nth-child(2) { color: var(--gold); }
 .dk-strip__inner em { font-style: normal; color: rgba(255,255,255,.7); font-size: .95rem; flex-basis: 100%; text-align: center; }
-.dk-cta__wa { position: relative; z-index: 1; margin: 1.25rem 0 0 !important; font-size: .92rem !important; }
-.dk-cta__wa a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 
 /* ─── Mock: listado de clientes (ilustrativo) ───────────── */
 .dk-list { padding: 1.1rem 1.25rem .6rem; }
