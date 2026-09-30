@@ -45,6 +45,10 @@
 <div class="mobile-menu" role="dialog" aria-label="Menú móvil">
   <a href="#como-funciona"   class="mobile-menu__link" data-i18n="dk_nav_how">Cómo funciona</a>
   <a href="#funcionalidades" class="mobile-menu__link" data-i18n="dk_nav_features">Funcionalidades</a>
+  <a href="#deuda"           class="mobile-menu__link" data-i18n="dk_nav_debt">Motor de deuda</a>
+  <a href="#estados"         class="mobile-menu__link" data-i18n="dk_nav_states">Motor de estados</a>
+  <a href="#integraciones"   class="mobile-menu__link" data-i18n="dk_nav_integ">Integraciones</a>
+  <a href="#externos"        class="mobile-menu__link" data-i18n="dk_nav_ext">Agencias y estudios</a>
   <a href="#ia"              class="mobile-menu__link" data-i18n="dk_nav_ai">Inteligencia artificial</a>
   <a href="#para-quien"      class="mobile-menu__link" data-i18n="dk_nav_who">Para quién</a>
   <a href="#preguntas"       class="mobile-menu__link" data-i18n="dk_nav_faq">Preguntas</a>
@@ -113,6 +117,14 @@
   </div>
 </section>
 
+<!-- ─── Franja de marca ──────────────────────────────────────── -->
+<div class="dk-strip" aria-label="Gestionar, negociar, recuperar">
+  <div class="container dk-strip__inner">
+    <span data-i18n="dk_strip1">Gestionar.</span><span data-i18n="dk_strip2">Negociar.</span><span data-i18n="dk_strip3">Recuperar.</span>
+    <em data-i18n="dk_strip_sub">El ciclo completo de la mora y el recupero, en una única plataforma.</em>
+  </div>
+</div>
+
 <!-- ─── El problema ──────────────────────────────────────────── -->
 <section class="section section--tint">
   <div class="container">
@@ -171,6 +183,16 @@
         <p data-i18n="dk_how4_p">Registrás los pagos, seguís el cumplimiento de cada acuerdo y ves los resultados en tableros claros.</p>
       </div>
     </div>
+    <p class="dk-judicial fade-up"><span aria-hidden="true">⚖️</span> <b data-i18n="dk_jud_b">Si no hay acuerdo o el convenio se cae,</b> <span data-i18n="dk_jud_s">el caso pasa a judicial con toda la gestión previa como respaldo.</span></p>
+
+    <h3 class="dk-tramos__title fade-up" data-i18n="dk_tr_title">Qué hace Diakos en cada tramo de atraso</h3>
+    <div class="dk-tramos">
+      <div class="dk-tramo dk-tramo--1 fade-up"><span class="num" data-i18n="dk_tr1_d">DÍA 1 – 30</span><h4 data-i18n="dk_tr1_t">Atraso temprano</h4><p data-i18n="dk_tr1_p">Marca la mora, actualiza la deuda y crea la tarea de contacto.</p></div>
+      <div class="dk-tramo dk-tramo--2 fade-up"><span class="num" data-i18n="dk_tr2_d">DÍA 31 – 60</span><h4 data-i18n="dk_tr2_t">Gestión activa</h4><p data-i18n="dk_tr2_p">Controla cada promesa y sugiere la próxima acción del caso.</p></div>
+      <div class="dk-tramo dk-tramo--3 fade-up"><span class="num" data-i18n="dk_tr3_d">DÍA 61 – 90</span><h4 data-i18n="dk_tr3_t">Mora dura</h4><p data-i18n="dk_tr3_p">Escala por regla, avisa al supervisor y arma la intimación.</p></div>
+      <div class="dk-tramo dk-tramo--4 fade-up"><span class="num" data-i18n="dk_tr4_d">DÍA 90 +</span><h4 data-i18n="dk_tr4_t">Instancia judicial</h4><p data-i18n="dk_tr4_p">Abre el expediente y sigue honorarios y garantías.</p></div>
+    </div>
+    <p class="dk-tramos__note" data-i18n="dk_tr_note">Los tramos y las acciones los define cada empresa.</p>
   </div>
 </section>
 
@@ -182,6 +204,12 @@
       <h2 data-i18n="dk_ft_title">Todo lo que tu equipo de cobranzas necesita</h2>
       <p data-i18n="dk_ft_sub">Una sola herramienta para el día a día, la negociación y el control.</p>
     </div>
+    <figure class="dk-shot dk-shot--wide fade-up">
+      <div class="dk-window"><div class="dk-window__bar"><i></i><i></i><i></i><b>diakos / clientes</b></div>
+        <img src="img/pantalla-clientes.png" width="1590" height="930" loading="lazy" alt="Pantalla de Diakos con el listado de clientes, su estado y el flujo de gestión de cada uno" />
+      </div>
+      <figcaption data-i18n="dk_shot1_cap">Toda la cartera a la vista: buscás, filtrás, exportás y ves en qué etapa está cada cliente.</figcaption>
+    </figure>
     <div class="dk-features">
       <div class="dk-feature fade-up">
         <div class="dk-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
@@ -223,6 +251,117 @@
         <h3 data-i18n="dk_f8_t">Alertas</h3>
         <p data-i18n="dk_f8_p">Avisos automáticos cuando vence una promesa, se atrasa una cuota o se rompe un acuerdo.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Motor de deuda ───────────────────────────────────────── -->
+<section class="section" id="deuda">
+  <div class="container">
+    <div class="dk-debt">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="dk_db_label">Motor de deuda</p>
+        <h2 data-i18n="dk_db_title">La deuda al día, calculada como vos la calculás</h2>
+        <p style="margin-top:1rem;" data-i18n="dk_db_sub">Diakos actualiza cada deuda con tus propias reglas y arma planes de pago en segundos, listos para imprimir y firmar.</p>
+        <div class="dk-formula" aria-label="Capital más interés más punitorios más gastos más IVA menos cobros es igual a deuda al día">
+          <span data-i18n="dk_db_c1">Capital</span><i>+</i><span data-i18n="dk_db_c2">Interés</span><i>+</i><span data-i18n="dk_db_c3">Punitorios</span><i>+</i><span data-i18n="dk_db_c4">Gastos</span><i>+</i><span data-i18n="dk_db_c5">IVA</span><i>−</i><span data-i18n="dk_db_c6">Cobros</span><i>=</i><strong data-i18n="dk_db_c7">Deuda al día</strong>
+        </div>
+        <div class="dk-checks">
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_db1_b">Tasas por tramo</b> — <span data-i18n="dk_db1_s">distintas según los días de mora.</span></div></div>
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_db2_b">Cada cargo, a tu manera</b> — <span data-i18n="dk_db2_s">definís el orden y sobre qué se calcula.</span></div></div>
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_db3_b">Liquidaciones masivas</b> — <span data-i18n="dk_db3_s">sobre un caso o sobre toda la cartera.</span></div></div>
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_db4_b">Multi-moneda</b> — <span data-i18n="dk_db4_s">con cotizaciones por fecha.</span></div></div>
+        </div>
+      </div>
+      <figure class="dk-shot fade-up">
+        <div class="dk-window"><div class="dk-window__bar"><i></i><i></i><i></i><b>diakos / calculadora</b></div>
+          <img src="img/pantalla-calculadora.png" width="1242" height="847" loading="lazy" alt="Calculadora de refinanciación de Diakos con el cuadro de cuotas de un plan de pago" />
+        </div>
+        <figcaption data-i18n="dk_shot2_cap">Calculadora de refinanciación: cuotas, intereses y costo financiero al instante, y el preacuerdo en PDF.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Motor de estados ─────────────────────────────────────── -->
+<section class="section section--tint" id="estados">
+  <div class="container">
+    <div class="center-head">
+      <p class="section-label" data-i18n="dk_st_label">Motor de estados</p>
+      <h2 data-i18n="dk_st_title">Cada caso sigue tu camino, no el nuestro</h2>
+      <p data-i18n="dk_st_sub">Diakos tiene un motor de estados totalmente configurable: definís las etapas, cómo se pasa de una a otra y qué pasa en cada cambio. Este es un flujo estándar de cobranza, para que te hagas una idea.</p>
+    </div>
+
+    <div class="dk-flow fade-up">
+      <div class="dk-flow__scroll">
+        <svg class="dk-flow__svg" viewBox="0 60 1040 342" role="img" aria-labelledby="dk-flow-title">
+          <title id="dk-flow-title">Ejemplo de flujo de estados de un caso de cobranza</title>
+          <defs>
+            <marker id="dk-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0L10 5L0 10z" class="dk-flow__head"/>
+            </marker>
+            <marker id="dk-arrow-alt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0L10 5L0 10z" class="dk-flow__head--alt"/>
+            </marker>
+          </defs>
+
+          <!-- Aristas: camino feliz -->
+          <path class="dk-flow__edge" d="M170 178 H224" marker-end="url(#dk-arrow)"/>
+          <path class="dk-flow__edge" d="M380 178 H434" marker-end="url(#dk-arrow)"/>
+          <path class="dk-flow__edge" d="M590 178 H644" marker-end="url(#dk-arrow)"/>
+          <path class="dk-flow__edge" d="M800 178 H854" marker-end="url(#dk-arrow)"/>
+          <!-- Aristas: desvíos -->
+          <path class="dk-flow__edge dk-flow__edge--alt" d="M515 150 C515 80 305 80 305 146" marker-end="url(#dk-arrow-alt)"/>
+          <path class="dk-flow__edge dk-flow__edge--alt" d="M305 206 C305 280 400 322 434 322" marker-end="url(#dk-arrow-alt)"/>
+          <path class="dk-flow__edge dk-flow__edge--alt" d="M725 206 C725 280 630 322 596 322" marker-end="url(#dk-arrow-alt)"/>
+          <path class="dk-flow__edge dk-flow__edge--alt" d="M590 336 C700 380 800 380 854 336" marker-end="url(#dk-arrow-alt)"/>
+
+          <!-- Etiquetas de transición -->
+          <text class="dk-flow__label" x="197" y="140" text-anchor="middle" data-i18n="dk_st_e1">Asigna</text>
+          <text class="dk-flow__label" x="407" y="140" text-anchor="middle" data-i18n="dk_st_e2">Promete</text>
+          <text class="dk-flow__label" x="617" y="140" text-anchor="middle" data-i18n="dk_st_e3">Firma</text>
+          <text class="dk-flow__label" x="827" y="140" text-anchor="middle" data-i18n="dk_st_e4">Cancela</text>
+          <text class="dk-flow__label dk-flow__label--alt" x="410" y="84" text-anchor="middle" data-i18n="dk_st_e5">Incumple la promesa</text>
+          <text class="dk-flow__label dk-flow__label--alt" x="300" y="300" text-anchor="middle" data-i18n="dk_st_e6">Sin respuesta</text>
+          <text class="dk-flow__label dk-flow__label--alt" x="735" y="300" text-anchor="middle" data-i18n="dk_st_e7">Acuerdo roto</text>
+          <text class="dk-flow__label dk-flow__label--alt" x="722" y="392" text-anchor="middle" data-i18n="dk_st_e8">Sin recupero</text>
+
+          <!-- Nodos -->
+          <g class="dk-flow__node dk-flow__node--start"><rect x="20" y="150" width="150" height="56" rx="14"/><text x="95" y="183" text-anchor="middle" data-i18n="dk_st_n1">En mora</text></g>
+          <g class="dk-flow__node"><rect x="230" y="150" width="150" height="56" rx="14"/><text x="305" y="183" text-anchor="middle" data-i18n="dk_st_n2">En gestión</text></g>
+          <g class="dk-flow__node"><rect x="440" y="150" width="150" height="56" rx="14"/><text x="515" y="183" text-anchor="middle" data-i18n="dk_st_n3">Promesa de pago</text></g>
+          <g class="dk-flow__node"><rect x="650" y="150" width="150" height="56" rx="14"/><text x="725" y="183" text-anchor="middle" data-i18n="dk_st_n4">Acuerdo vigente</text></g>
+          <g class="dk-flow__node dk-flow__node--ok"><rect x="860" y="150" width="160" height="56" rx="14"/><text x="940" y="183" text-anchor="middle" data-i18n="dk_st_n5">Regularizado ✓</text></g>
+          <g class="dk-flow__node dk-flow__node--legal"><rect x="440" y="294" width="150" height="56" rx="14"/><text x="515" y="327" text-anchor="middle" data-i18n="dk_st_n6">Gestión judicial</text></g>
+          <g class="dk-flow__node dk-flow__node--end"><rect x="860" y="294" width="160" height="56" rx="14"/><text x="940" y="327" text-anchor="middle" data-i18n="dk_st_n7">Incobrable</text></g>
+        </svg>
+      </div>
+      <div class="dk-flow__legend">
+        <span><i class="dk-flow__sw"></i><span data-i18n="dk_st_lg1">Camino habitual</span></span>
+        <span><i class="dk-flow__sw dk-flow__sw--alt"></i><span data-i18n="dk_st_lg2">Desvíos</span></span>
+        <span class="dk-flow__hint" data-i18n="dk_st_hint">Es sólo un ejemplo: cada empresa arma el suyo.</span>
+      </div>
+    </div>
+
+    <div class="dk-wf">
+      <div class="fade-up">
+        <h3 data-i18n="dk_wf_title">Workflows que se dibujan, no se programan</h3>
+        <p data-i18n="dk_wf_text">El administrador arma cada circuito arrastrando estados y uniéndolos con flechas. Por ejemplo, este circuito judicial: de la carta documento a la causa cerrada.</p>
+      </div>
+      <figure class="dk-shot fade-up">
+        <div class="dk-window"><div class="dk-window__bar"><i></i><i></i><i></i><b>diakos / workflows</b></div>
+          <img src="img/pantalla-workflow.png" width="1491" height="629" loading="lazy" alt="Editor visual de workflows de Diakos con un circuito judicial de estados" />
+        </div>
+      </figure>
+    </div>
+
+    <div class="dk-st-grid">
+      <div class="dk-st-item fade-up"><span>🧩</span><h3 data-i18n="dk_st1_t">Etapas a tu medida</h3><p data-i18n="dk_st1_p">Creá los estados que necesites y definí por cuáles se puede avanzar o volver.</p></div>
+      <div class="dk-st-item fade-up"><span>🚦</span><h3 data-i18n="dk_st2_t">Reglas para avanzar</h3><p data-i18n="dk_st2_p">Pedí datos o documentos obligatorios antes de pasar de etapa.</p></div>
+      <div class="dk-st-item fade-up"><span>👤</span><h3 data-i18n="dk_st3_t">Quién puede qué</h3><p data-i18n="dk_st3_p">Cada cambio de estado puede quedar reservado a ciertos roles.</p></div>
+      <div class="dk-st-item fade-up"><span>⚡</span><h3 data-i18n="dk_st4_t">Acciones automáticas</h3><p data-i18n="dk_st4_p">Al cambiar de estado, Diakos puede avisar, crear tareas o notificar a otros sistemas.</p></div>
+      <div class="dk-st-item fade-up"><span>🕓</span><h3 data-i18n="dk_st5_t">Historial completo</h3><p data-i18n="dk_st5_p">Cada paso queda registrado: quién lo hizo, cuándo y desde qué estado.</p></div>
+      <div class="dk-st-item fade-up"><span>🗂️</span><h3 data-i18n="dk_st6_t">No sólo para casos</h3><p data-i18n="dk_st6_p">También sirve para acuerdos, juicios o cualquier otro registro de tu operación.</p></div>
     </div>
   </div>
 </section>
@@ -277,21 +416,67 @@
       <div class="dk-aud fade-up"><div class="dk-aud__icon">🏦</div><h3 data-i18n="dk_who2_t">Financieras y fintech</h3><p data-i18n="dk_who2_p">Carteras de préstamos con alto volumen de casos.</p></div>
       <div class="dk-aud fade-up"><div class="dk-aud__icon">🤝</div><h3 data-i18n="dk_who3_t">Mutuales y cooperativas</h3><p data-i18n="dk_who3_p">Cobranza cercana al asociado, ordenada y trazable.</p></div>
       <div class="dk-aud fade-up"><div class="dk-aud__icon">🏪</div><h3 data-i18n="dk_who4_t">Comercios con crédito propio</h3><p data-i18n="dk_who4_p">Ventas en cuotas y cuentas corrientes.</p></div>
-      <div class="dk-aud fade-up"><div class="dk-aud__icon">⚖️</div><h3 data-i18n="dk_who5_t">Estudios de cobranza</h3><p data-i18n="dk_who5_p">Gestión extrajudicial y judicial para varios clientes.</p></div>
+      <div class="dk-aud fade-up"><div class="dk-aud__icon">⚖️</div><h3 data-i18n="dk_who5_t">Agencias y estudios jurídicos</h3><p data-i18n="dk_who5_p">Gestión extrajudicial y judicial de carteras de terceros.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Agencias y estudios externos ─────────────────────────── -->
+<section class="section section--tint" id="externos">
+  <div class="container">
+    <div class="dk-ext">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="dk_ex_label">Agencias y estudios externos</p>
+        <h2 data-i18n="dk_ex_title">Tu equipo y tus externos, en la misma plataforma</h2>
+        <p style="margin-top:1rem;" data-i18n="dk_ex_sub">Si trabajás con agencias de cobranza, estudios jurídicos o procuradores, Diakos te deja asignarles casos y seguir su gestión sin perder el control.</p>
+        <div class="dk-checks">
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_ex1_b">Asignación flexible</b> — <span data-i18n="dk_ex1_s">derivá un cliente entero, un legajo o un contrato puntual, a tu equipo o a un externo.</span></div></div>
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_ex2_b">Portal para externos</b> — <span data-i18n="dk_ex2_s">cada agencia o estudio entra y ve sólo los casos que le asignaste, y registra su gestión ahí mismo.</span></div></div>
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_ex3_b">O sólo seguimiento</b> — <span data-i18n="dk_ex3_s">si trabajan con sus propias herramientas, tu equipo actualiza el avance y todo queda igual de registrado.</span></div></div>
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_ex4_b">Comisiones y desempeño</b> — <span data-i18n="dk_ex4_s">comisión pactada por asignación y ranking de cada organización para decidir a quién derivar.</span></div></div>
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_ex5_b">Siempre con un responsable</b> — <span data-i18n="dk_ex5_s">cada derivación tiene un supervisor interno que la sigue de cerca.</span></div></div>
+        </div>
+      </div>
+
+      <div class="dk-window fade-up" aria-hidden="true">
+        <div class="dk-window__bar"><i></i><i></i><i></i><b>diakos / asignaciones</b></div>
+        <div class="dk-window__body dk-ext__body">
+          <div class="dk-ext__row dk-ext__row--head">
+            <span data-i18n="dk_ex_th1">Gestiona</span><span data-i18n="dk_ex_th2">Casos</span><span data-i18n="dk_ex_th3">Comisión</span><span data-i18n="dk_ex_th4">Modo</span>
+          </div>
+          <div class="dk-ext__row">
+            <span><b data-i18n="dk_ex_r1">Equipo interno</b><small data-i18n="dk_ex_r1s">Negociadores propios</small></span>
+            <span class="num">128</span><span class="num">—</span><span><em class="dk-badge dk-badge--ok" data-i18n="dk_ex_m0">Interno</em></span>
+          </div>
+          <div class="dk-ext__row">
+            <span><b>Cobranzas del Litoral</b><small data-i18n="dk_ex_r2s">Agencia · Tier 1</small></span>
+            <span class="num">46</span><span class="num">12,00%</span><span><em class="dk-badge dk-badge--teal" data-i18n="dk_ex_m1">Portal</em></span>
+          </div>
+          <div class="dk-ext__row">
+            <span><b>Estudio Ferrari &amp; Asoc.</b><small data-i18n="dk_ex_r3s">Estudio jurídico · Tier 1</small></span>
+            <span class="num">19</span><span class="num">10,00%</span><span><em class="dk-badge dk-badge--teal" data-i18n="dk_ex_m1">Portal</em></span>
+          </div>
+          <div class="dk-ext__row">
+            <span><b>Recupero Andino</b><small data-i18n="dk_ex_r4s">Agencia · Tier 2</small></span>
+            <span class="num">23</span><span class="num">15,00%</span><span><em class="dk-badge dk-badge--warn" data-i18n="dk_ex_m2">Seguimiento</em></span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ─── Configurable + Seguridad ─────────────────────────────── -->
-<section class="section section--tint">
+<section class="section">
   <div class="container">
     <div class="dk-split">
       <div class="dk-panel dk-panel--tint fade-up">
         <p class="section-label" data-i18n="dk_cfg_label">A tu medida</p>
         <h2 data-i18n="dk_cfg_title">Se adapta a tu forma de trabajar, sin programar</h2>
         <p data-i18n="dk_cfg_sub">Cada organización cobra distinto. Diakos se configura desde la misma plataforma.</p>
+        <div class="dk-chips"><span data-i18n="dk_chip1">Entidades propias</span><span data-i18n="dk_chip2">Campos a medida</span><span data-i18n="dk_chip3">Campos calculados</span><span data-i18n="dk_chip4">Pantallas y menú</span><span data-i18n="dk_chip5">Catálogos</span><span data-i18n="dk_chip6">Packs de configuración</span></div>
         <div class="dk-checks">
-          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_cfg1_b">Etapas propias</b> — <span data-i18n="dk_cfg1_s">definí por qué estados pasa cada caso.</span></div></div>
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_cfg1_b">Plantillas propias</b> — <span data-i18n="dk_cfg1_s">cartas y emails con tu estilo y tus datos.</span></div></div>
           <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_cfg2_b">Datos a medida</b> — <span data-i18n="dk_cfg2_s">sumá los campos que tu negocio necesita.</span></div></div>
           <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_cfg3_b">Reglas de cálculo</b> — <span data-i18n="dk_cfg3_s">tasas, cargos y gastos según tus condiciones.</span></div></div>
           <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_cfg4_b">Tu marca</b> — <span data-i18n="dk_cfg4_s">logo y nombre de tu empresa en pantallas, PDFs y comunicaciones.</span></div></div>
@@ -304,10 +489,37 @@
         <div class="dk-checks">
           <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_sec1_b">Permisos por rol</b> — <span data-i18n="dk_sec1_s">cada usuario ve y hace sólo lo que le corresponde.</span></div></div>
           <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_sec2_b">Todo queda registrado</b> — <span data-i18n="dk_sec2_s">quién cambió qué y cuándo.</span></div></div>
-          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_sec3_b">Datos sensibles protegidos</b> — <span data-i18n="dk_sec3_s">información resguardada y enmascarada.</span></div></div>
-          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_sec4_b">Donde lo necesites</b> — <span data-i18n="dk_sec4_s">en la nube o en tus propios servidores.</span></div></div>
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_sec3_b">Historial que no se borra</b> — <span data-i18n="dk_sec3_s">las gestiones registradas no se editan ni se eliminan.</span></div></div>
+          <div class="dk-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="dk_sec4_b">Cambios con control</b> — <span data-i18n="dk_sec4_s">cada etapa valida quién puede avanzar y con qué datos.</span></div></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Integraciones ────────────────────────────────────────── -->
+<section class="section section--tint" id="integraciones">
+  <div class="container">
+    <div class="dk-integ">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="dk_in_label">Integraciones</p>
+        <h2 data-i18n="dk_in_title">Se conecta con los sistemas que ya usás</h2>
+        <p style="margin-top:1rem;" data-i18n="dk_in_sub">Diakos no tiene que ser una isla. Las integraciones se configuran para que la información fluya sola entre tus herramientas.</p>
+        <div class="dk-chips"><span data-i18n="dk_chip7">API documentada</span><span data-i18n="dk_chip8">Credenciales por sistema</span><span data-i18n="dk_chip9">Webhooks</span><span data-i18n="dk_chip10">Importación y exportación</span></div>
+      </div>
+      <div class="dk-integ__hub fade-up" aria-hidden="true">
+        <div class="dk-integ__core"><img src="favicon.svg" alt="" /><span>Diakos</span></div>
+        <div class="dk-integ__sat dk-integ__sat--1"><span>🏦</span><b data-i18n="dk_in_s1">Tu sistema de gestión</b></div>
+        <div class="dk-integ__sat dk-integ__sat--2"><span>✉️</span><b data-i18n="dk_in_s2">Email</b></div>
+        <div class="dk-integ__sat dk-integ__sat--3"><span>📊</span><b data-i18n="dk_in_s3">Planillas</b></div>
+        <div class="dk-integ__sat dk-integ__sat--4"><span>🔔</span><b data-i18n="dk_in_s4">Otros sistemas</b></div>
+      </div>
+    </div>
+    <div class="dk-integ__cards">
+      <div class="dk-integ__card fade-up"><h4 data-i18n="dk_in1_t">Recibe tu cartera</h4><p data-i18n="dk_in1_p">Tus sistemas le envían clientes, deudas y pagos a Diakos a través de un acceso seguro.</p></div>
+      <div class="dk-integ__card fade-up"><h4 data-i18n="dk_in2_t">Avisa cuando algo cambia</h4><p data-i18n="dk_in2_p">Un pago, un acuerdo o un cambio de estado pueden notificar automáticamente a otra aplicación.</p></div>
+      <div class="dk-integ__card fade-up"><h4 data-i18n="dk_in3_t">Importa y exporta</h4><p data-i18n="dk_in3_p">Entrada y salida de datos por planillas, para cargas masivas o para llevarte la información.</p></div>
+      <div class="dk-integ__card fade-up"><h4 data-i18n="dk_in4_t">Comunicaciones</h4><p data-i18n="dk_in4_p">Configurás tus canales de envío y Diakos manda los mensajes con tus plantillas.</p></div>
     </div>
   </div>
 </section>
@@ -332,19 +544,32 @@
 </section>
 
 <!-- ─── Preguntas frecuentes ─────────────────────────────────── -->
-<section class="section section--tint" id="preguntas">
+<section class="section dk-faq-section" id="preguntas">
   <div class="container">
-    <div class="center-head">
-      <p class="section-label" data-i18n="dk_faq_label">Preguntas frecuentes</p>
-      <h2 data-i18n="dk_faq_title">Lo que suelen preguntarnos</h2>
-    </div>
-    <div class="dk-faq">
-      <details class="fade-up"><summary data-i18n="dk_faq1_q">¿Puedo cargar mi cartera desde Excel?</summary><p data-i18n="dk_faq1_a">Sí. Diakos importa clientes, contratos y cuotas desde planillas, y también puede exportar cualquier listado a Excel.</p></details>
-      <details class="fade-up"><summary data-i18n="dk_faq2_q">¿Cuánto tarda la puesta en marcha?</summary><p data-i18n="dk_faq2_a">Depende del tamaño de la cartera y de cuánto haya que adaptar. En la demo revisamos tu caso y te damos un plan concreto.</p></details>
-      <details class="fade-up"><summary data-i18n="dk_faq3_q">¿Necesito instalar algo?</summary><p data-i18n="dk_faq3_a">No. Diakos funciona desde el navegador, en computadora, tablet o celular.</p></details>
-      <details class="fade-up"><summary data-i18n="dk_faq4_q">¿Dónde quedan guardados mis datos?</summary><p data-i18n="dk_faq4_a">Podés usarlo en la nube o instalarlo en tus propios servidores. En ambos casos el acceso está protegido y todo queda registrado.</p></details>
-      <details class="fade-up"><summary data-i18n="dk_faq5_q">¿La inteligencia artificial es obligatoria?</summary><p data-i18n="dk_faq5_a">No. Es opcional y se activa función por función. Diakos funciona completo sin ella.</p></details>
-      <details class="fade-up"><summary data-i18n="dk_faq6_q">¿Sirve si ya tengo un sistema de gestión?</summary><p data-i18n="dk_faq6_a">Sí. Diakos convive con tu sistema actual y se puede integrar para recibir la información de la cartera.</p></details>
+    <div class="dk-faq-wrap">
+      <div class="dk-faq-intro fade-up">
+        <p class="section-label" data-i18n="dk_faq_label">Preguntas frecuentes</p>
+        <h2 data-i18n="dk_faq_title">Lo que todos nos preguntan (y está bien)</h2>
+        <p style="margin-top:1rem;" data-i18n="dk_faq_sub">Si estás pensando en ordenar tu cobranza, seguro te pasa alguna de estas. Acá van las respuestas cortas.</p>
+        <div class="dk-faq-more">
+          <span class="dk-faq-more__icon">💬</span>
+          <div>
+            <b data-i18n="dk_faq_more_t">¿Tu pregunta no está?</b>
+            <p data-i18n="dk_faq_more_p">Escribinos y te respondemos nosotros, no un bot.</p>
+            <a href="mailto:contacto@plexia.com.ar?subject=Consulta%20Diakos" class="btn btn-primary" data-i18n="dk_faq_more_btn">Preguntanos</a>
+          </div>
+        </div>
+      </div>
+      <div class="dk-faq">
+        <details class="fade-up" open><summary><span class="dk-faq__emoji">📊</span><span data-i18n="dk_faq1_q">Tengo todo en Excel… ¿arranco de cero?</span></summary><p data-i18n="dk_faq1_a">Para nada. Traemos tu cartera desde tus planillas y en Diakos queda todo ordenado. Y si algún día necesitás un listado, lo exportás a Excel con un clic.</p></details>
+        <details class="fade-up"><summary><span class="dk-faq__emoji">⏱️</span><span data-i18n="dk_faq2_q">¿Cuánto tarda en estar andando?</span></summary><p data-i18n="dk_faq2_a">Depende del tamaño de tu cartera y de cuánto haya que adaptar. En la demo miramos tu caso y te llevás un plan concreto, con fechas.</p></details>
+        <details class="fade-up"><summary><span class="dk-faq__emoji">🔀</span><span data-i18n="dk_faq3_q">Mi forma de cobrar es bastante particular. ¿Se adapta?</span></summary><p data-i18n="dk_faq3_a">Esa es la idea. Etapas, reglas, campos, cálculos y plantillas se configuran para que Diakos trabaje como vos, y no al revés.</p></details>
+        <details class="fade-up"><summary><span class="dk-faq__emoji">🔌</span><span data-i18n="dk_faq4_q">¿Se lleva bien con mis otros sistemas?</span></summary><p data-i18n="dk_faq4_a">Sí. Puede recibir la información de tu sistema de gestión, avisar a otras aplicaciones cuando algo cambia e intercambiar datos por planillas.</p></details>
+        <details class="fade-up"><summary><span class="dk-faq__emoji">🤝</span><span data-i18n="dk_faq8_q">Trabajo con agencias y abogados externos. ¿Pueden usarlo?</span></summary><p data-i18n="dk_faq8_a">Sí. Les asignás los casos que quieras y entran a un portal donde ven sólo lo suyo. Si prefieren seguir con sus herramientas, tu equipo registra el avance.</p></details>
+        <details class="fade-up"><summary><span class="dk-faq__emoji">👥</span><span data-i18n="dk_faq5_q">¿Todos ven todo?</span></summary><p data-i18n="dk_faq5_a">Sólo si vos querés. Cada usuario tiene un rol con sus permisos, y cada cambio queda registrado con nombre y fecha.</p></details>
+        <details class="fade-up"><summary><span class="dk-faq__emoji">🤖</span><span data-i18n="dk_faq6_q">¿La inteligencia artificial es obligatoria?</span></summary><p data-i18n="dk_faq6_a">No. Es un extra opcional que prendés función por función, cuando quieras. Diakos funciona completo sin ella.</p></details>
+        <details class="fade-up"><summary><span class="dk-faq__emoji">💻</span><span data-i18n="dk_faq7_q">¿Hay que instalar algo?</span></summary><p data-i18n="dk_faq7_a">Nada. Abrís el navegador y listo: en la compu, la tablet o el celular.</p></details>
+      </div>
     </div>
   </div>
 </section>
@@ -359,6 +584,7 @@
         <a href="mailto:contacto@plexia.com.ar?subject=Demo%20Diakos" class="btn btn-light" data-i18n="dk_cta_demo">Pedí una demo</a>
         <a href="mailto:contacto@plexia.com.ar?subject=Consulta%20Diakos" class="btn btn-outline dk-cta__ghost" data-i18n="dk_final_btn2">Hacé una consulta</a>
       </div>
+      <p class="dk-cta__wa"><a href="https://wa.me/5491134225536?text=Hola%20Diego%2C%20quiero%20conocer%20Diakos" target="_blank" rel="noopener">💬 <span data-i18n="dk_final_wa">O escribile a Diego por WhatsApp: +54 9 11 3422-5536</span></a></p>
     </div>
   </div>
 </section>
@@ -377,6 +603,10 @@
         <ul class="footer__links">
           <li><a href="#como-funciona"   data-i18n="dk_nav_how">Cómo funciona</a></li>
           <li><a href="#funcionalidades" data-i18n="dk_nav_features">Funcionalidades</a></li>
+          <li><a href="#deuda"           data-i18n="dk_nav_debt">Motor de deuda</a></li>
+          <li><a href="#estados"         data-i18n="dk_nav_states">Motor de estados</a></li>
+          <li><a href="#integraciones"   data-i18n="dk_nav_integ">Integraciones</a></li>
+          <li><a href="#externos"        data-i18n="dk_nav_ext">Agencias y estudios</a></li>
           <li><a href="#ia"              data-i18n="dk_nav_ai">Inteligencia artificial</a></li>
           <li><a href="#preguntas"       data-i18n="dk_nav_faq">Preguntas</a></li>
         </ul>
@@ -386,6 +616,7 @@
         <ul class="footer__links">
           <li><a href="mailto:contacto@plexia.com.ar">contacto@plexia.com.ar</a></li>
           <li><a href="https://www.plexia.com.ar">www.plexia.com.ar</a></li>
+          <li><a href="https://wa.me/5491134225536" target="_blank" rel="noopener">WhatsApp +54 9 11 3422-5536</a></li>
           <li><span data-i18n="dk_footer_loc">Argentina</span></li>
         </ul>
       </div>
