@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kratos – Procesos y procedimientos | Plexia</title>
+  <meta name="description" content="Kratos es la plataforma para documentar, publicar y ejecutar los procesos y procedimientos de tu organización: claros, aprobados, conocidos por todos y medidos." />
+  <!-- Página aún no publicada en el sitio: accesible sólo por URL, fuera de buscadores -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Kratos – Procesos y procedimientos" />
+  <meta property="og:description" content="Tus procesos claros, conocidos por todos y funcionando en el día a día." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="../css/styles.css?v=20261031" />
+  <link rel="stylesheet" href="kratos.css?v=20261031" />
+</head>
+<body class="kr">
+
+<!-- ─── Navigation (propia de la landing, sin links hacia/desde el sitio) ─── -->
+<nav class="nav" id="main-nav">
+  <div class="container nav__inner">
+    <a href="#top" class="kr-brand" aria-label="Kratos – Inicio">
+      <span class="kr-brand__logo"><img src="favicon.svg" alt="" />Kratos</span>
+      <span class="kr-brand__sep" aria-hidden="true"></span>
+      <span class="kr-brand__by"><span data-i18n="kr_by">by</span><img src="../img/logo-h.png" alt="Plexia" /></span>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="#como-funciona" class="nav__link" data-i18n="kr_nav_how">Cómo funciona</a></li>
+      <li><a href="#portal"        class="nav__link" data-i18n="kr_nav_portal">Portal</a></li>
+      <li><a href="#ejecucion"     class="nav__link" data-i18n="kr_nav_exec">Ejecución</a></li>
+      <li><a href="#tablero"       class="nav__link" data-i18n="kr_nav_dash">Tablero</a></li>
+      <li><a href="#ia"            class="nav__link" data-i18n="kr_nav_ai_short">IA</a></li>
+    </ul>
+    <div class="nav__actions">
+      <div class="lang-switcher" role="group" aria-label="Cambiar idioma">
+        <button class="lang-btn active" data-lang="es" aria-label="Español">ES</button>
+        <button class="lang-btn"        data-lang="en" aria-label="English">EN</button>
+      </div>
+      <a href="mailto:contacto@plexia.com.ar?subject=Demo%20Kratos" class="btn btn-primary" data-i18n="kr_cta_demo">Pedí una demo</a>
+    </div>
+    <button class="nav__burger" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" role="dialog" aria-label="Menú móvil">
+  <a href="#como-funciona" class="mobile-menu__link" data-i18n="kr_nav_how">Cómo funciona</a>
+  <a href="#documentar"    class="mobile-menu__link" data-i18n="kr_nav_doc">Documentar</a>
+  <a href="#aprobar"       class="mobile-menu__link" data-i18n="kr_nav_approve">Aprobar y publicar</a>
+  <a href="#portal"        class="mobile-menu__link" data-i18n="kr_nav_portal">Portal</a>
+  <a href="#ejecucion"     class="mobile-menu__link" data-i18n="kr_nav_exec">Ejecución</a>
+  <a href="#tablero"       class="mobile-menu__link" data-i18n="kr_nav_dash">Tablero</a>
+  <a href="#integraciones" class="mobile-menu__link" data-i18n="kr_nav_integ">Integraciones</a>
+  <a href="#ia"            class="mobile-menu__link" data-i18n="kr_nav_ai">Inteligencia artificial</a>
+  <a href="#preguntas"     class="mobile-menu__link" data-i18n="kr_nav_faq">Preguntas</a>
+  <a href="mailto:contacto@plexia.com.ar?subject=Demo%20Kratos" class="mobile-menu__link" data-i18n="kr_cta_demo">Pedí una demo</a>
+  <div class="mobile-menu__divider"></div>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="es">ES</button>
+    <button class="lang-btn"        data-lang="en">EN</button>
+  </div>
+</div>
+
+<!-- ─── Hero ────────────────────────────────────────────────── -->
+<section class="kr-hero" id="top">
+  <div class="container">
+    <div class="kr-hero__grid">
+
+      <div>
+        <p class="kr-hero__eyebrow" data-i18n="kr_hero_eyebrow">Procesos y procedimientos</p>
+        <h1>
+          <span data-i18n="kr_hero_t1">Tus procesos claros.</span>
+          <span class="hl" data-i18n="kr_hero_t2">Y funcionando todos los días.</span>
+        </h1>
+        <p class="kr-hero__text" data-i18n="kr_hero_text">Kratos es la plataforma para documentar, aprobar, publicar y ejecutar los procedimientos de tu organización. Cada persona sabe qué le toca, cada caso avanza paso a paso y vos ves dónde se traba.</p>
+        <div class="kr-hero__actions">
+          <a href="mailto:contacto@plexia.com.ar?subject=Demo%20Kratos" class="btn btn-primary" data-i18n="kr_cta_demo">Pedí una demo</a>
+          <a href="#como-funciona" class="btn btn-outline" data-i18n="kr_hero_btn2">Mirá cómo funciona</a>
+        </div>
+        <div class="kr-hero__note">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="kr_hero_n1">100% web</span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="kr_hero_n2">Diagramas automáticos</span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="kr_hero_n3">Con asistente de IA</span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="kr_hero_n4">También en el celular</span></span>
+        </div>
+      </div>
+
+      <div class="kr-mock" aria-hidden="true">
+        <div class="kr-window hero-card">
+          <div class="kr-window__bar"><i></i><i></i><i></i><b>kratos / procedimientos / PRO-ADM-004</b></div>
+          <div class="kr-window__body">
+            <div class="kr-proc-head">
+              <div style="min-width:0;">
+                <div class="kr-eyebrow"><span data-i18n="kr_mk_manual">Manual de Administración</span> · <span class="num">v2.1</span></div>
+                <div class="kr-title-sm" data-i18n="kr_mk_proc">Pago a proveedores</div>
+              </div>
+              <span class="kr-badge kr-badge--ok" data-i18n="kr_mk_published">Publicado</span>
+            </div>
+            <div class="kr-tabs">
+              <span class="kr-tab" data-i18n="kr_mk_tab1">Actividades</span>
+              <span class="kr-tab kr-tab--on" data-i18n="kr_mk_tab2">Cursograma</span>
+              <span class="kr-tab" data-i18n="kr_mk_tab3">Ejecución</span>
+              <span class="kr-tab" data-i18n="kr_mk_tab4">Indicadores</span>
+            </div>
+            <svg class="kr-svg" viewBox="0 0 460 244">
+              <rect x="0" y="0"   width="460" height="80" rx="8" fill="#F5F9FB"/>
+              <rect x="0" y="82"  width="460" height="80" rx="8" fill="#fff" stroke="#E0EAEF"/>
+              <rect x="0" y="164" width="460" height="80" rx="8" fill="#F5F9FB"/>
+              <text class="kr-lane-label" x="10" y="44" data-i18n="kr_mk_l1">Compras</text>
+              <text class="kr-lane-label" x="10" y="126" data-i18n="kr_mk_l2">Gerencia</text>
+              <text class="kr-lane-label" x="10" y="208" data-i18n="kr_mk_l3">Tesorería</text>
+              <!-- conexiones -->
+              <path class="kr-edge" d="M162 40H180M264 40H282M300 58V103M300 137V185M342 202H360"/>
+              <path class="kr-edge" d="M318 40H345V18H120V23" stroke-dasharray="3 3"/>
+              <text x="350" y="14" font-size="8" fill="#557080" data-i18n="kr_mk_no">No: se corrige</text>
+              <text x="306" y="84" font-size="8" fill="#557080" data-i18n="kr_mk_yes">Sí</text>
+              <!-- nodos -->
+              <rect class="kr-node kr-node--done" x="78"  y="23"  width="84" height="34" rx="8"/>
+              <text class="kr-node-t" x="120" y="44" text-anchor="middle" data-i18n="kr_mk_n1">Recibir factura</text>
+              <rect class="kr-node kr-node--done" x="180" y="23"  width="84" height="34" rx="8"/>
+              <text class="kr-node-t" x="222" y="44" text-anchor="middle" data-i18n="kr_mk_n2">Controlar</text>
+              <path class="kr-node kr-node--done" d="M300 22L318 40L300 58L282 40Z"/>
+              <text class="kr-node-t" x="300" y="43" text-anchor="middle" font-size="8">¿OK?</text>
+              <rect class="kr-node kr-node--now" x="258" y="103" width="84" height="34" rx="8"/>
+              <text class="kr-node-t kr-node-t--w" x="300" y="124" text-anchor="middle" data-i18n="kr_mk_n3">Aprobar pago</text>
+              <rect class="kr-node" x="258" y="185" width="84" height="34" rx="8"/>
+              <text class="kr-node-t" x="300" y="206" text-anchor="middle" data-i18n="kr_mk_n4">Programar pago</text>
+              <rect class="kr-node" x="360" y="185" width="88" height="34" rx="8"/>
+              <text class="kr-node-t" x="404" y="206" text-anchor="middle" data-i18n="kr_mk_n5">Pagar y avisar</text>
+              <!-- un caso recorriendo el circuito -->
+              <circle class="kr-token" r="6">
+                <animateMotion dur="7s" repeatCount="indefinite" path="M120 40H222H300V120V202H404"/>
+              </circle>
+            </svg>
+          </div>
+        </div>
+        <div class="kr-float kr-float--read">
+          <div class="kr-float__ok">✓</div>
+          <div><b class="num">128</b><span data-i18n="kr_mk_reads">lecturas confirmadas</span></div>
+        </div>
+        <div class="kr-float kr-float--exec">
+          <small data-i18n="kr_mk_exec_label">Ejecución en curso</small>
+          <p><span class="num">EJ-2026-0418</span> · Insumos del Litoral SRL</p>
+          <div class="kr-prog"><i style="width:50%"></i></div>
+          <div class="kr-float__meta"><span data-i18n="kr_mk_exec_step">Paso 3 de 5 · Aprobar pago</span><span data-i18n="kr_mk_exec_due">vence hoy</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Franja de marca ──────────────────────────────────────── -->
+<div class="kr-strip" aria-label="Documentar, publicar, ejecutar">
+  <div class="container kr-strip__inner">
+    <span data-i18n="kr_strip1">Documentar.</span><span data-i18n="kr_strip2">Publicar.</span><span data-i18n="kr_strip3">Ejecutar.</span>
+    <em data-i18n="kr_strip_sub">El ciclo completo de tus procesos, en una única plataforma.</em>
+  </div>
+</div>
+
+<!-- ─── El problema ──────────────────────────────────────────── -->
+<section class="section section--tint">
+  <div class="container">
+    <div class="center-head fade-up">
+      <p class="section-label" data-i18n="kr_pb_label">El desafío</p>
+      <h2 data-i18n="kr_pb_title">Los procesos existen. El problema es que nadie los ve.</h2>
+      <p data-i18n="kr_pb_sub">Están en la cabeza de algunas personas, en un Word viejo o en una carpeta compartida que nadie abre.</p>
+    </div>
+    <div class="kr-problems">
+      <div class="kr-problem fade-up">
+        <div class="kr-problem__icon">📄</div>
+        <h3 data-i18n="kr_pb1_t">Manuales que nadie actualiza</h3>
+        <p data-i18n="kr_pb1_p">Hay tres versiones del mismo documento y ninguna refleja cómo se trabaja hoy.</p>
+      </div>
+      <div class="kr-problem fade-up">
+        <div class="kr-problem__icon">🤷</div>
+        <h3 data-i18n="kr_pb2_t">“¿Y esto quién lo hace?”</h3>
+        <p data-i18n="kr_pb2_p">Cuando alguien nuevo entra o alguien se va, el conocimiento se pierde y los errores se repiten.</p>
+      </div>
+      <div class="kr-problem fade-up">
+        <div class="kr-problem__icon">⏳</div>
+        <h3 data-i18n="kr_pb3_t">Casos que se traban sin que nadie lo note</h3>
+        <p data-i18n="kr_pb3_p">Un pago, una compra o un alta quedan parados en algún escritorio y nadie sabe dónde ni desde cuándo.</p>
+      </div>
+    </div>
+    <p class="kr-answer fade-up"><span data-i18n="kr_pb_answer1">Kratos convierte tus procedimientos en</span> <strong data-i18n="kr_pb_answer2">algo vivo: claro, compartido y medido.</strong></p>
+  </div>
+</section>
+
+<!-- ─── Cómo funciona ────────────────────────────────────────── -->
+<section class="section" id="como-funciona">
+  <div class="container">
+    <div class="center-head fade-up">
+      <p class="section-label" data-i18n="kr_how_label">Cómo funciona</p>
+      <h2 data-i18n="kr_how_title">Del papel a la operación, en cuatro pasos</h2>
+    </div>
+    <div class="kr-cycle">
+      <div class="kr-cstep fade-up">
+        <div class="kr-cstep__ico"><span class="kr-cstep__n">1</span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+        <h3 data-i18n="kr_how1_t">Documentá</h3>
+        <p data-i18n="kr_how1_p">Escribí cada paso, quién lo hace y con qué. El diagrama se dibuja solo.</p>
+      </div>
+      <div class="kr-cstep fade-up">
+        <div class="kr-cstep__ico"><span class="kr-cstep__n">2</span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div>
+        <h3 data-i18n="kr_how2_t">Aprobá</h3>
+        <p data-i18n="kr_how2_p">El procedimiento pasa por revisión y aprobación antes de publicarse, con cada versión guardada.</p>
+      </div>
+      <div class="kr-cstep fade-up">
+        <div class="kr-cstep__ico"><span class="kr-cstep__n">3</span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 5a3.5 3.5 0 0 1 0 7M21.5 20c-.5-2.4-1.8-4-3.5-4.8"/></svg></div>
+        <h3 data-i18n="kr_how3_t">Compartí</h3>
+        <p data-i18n="kr_how3_p">Cada persona ve en el portal lo que le toca y confirma que lo leyó.</p>
+      </div>
+      <div class="kr-cstep fade-up">
+        <div class="kr-cstep__ico"><span class="kr-cstep__n">4</span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"/></svg></div>
+        <h3 data-i18n="kr_how4_t">Ejecutá y medí</h3>
+        <p data-i18n="kr_how4_p">Los casos reales recorren el procedimiento paso a paso, con plazos, avisos e indicadores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Funcionalidades ──────────────────────────────────────── -->
+<section class="section section--tint" id="funcionalidades">
+  <div class="container">
+    <div class="center-head fade-up">
+      <p class="section-label" data-i18n="kr_ft_label">Funcionalidades</p>
+      <h2 data-i18n="kr_ft_title">Todo lo que tus procesos necesitan</h2>
+      <p data-i18n="kr_ft_sub">Una sola herramienta para escribirlos, comunicarlos y hacerlos funcionar.</p>
+    </div>
+    <div class="kr-features">
+      <div class="kr-feature fade-up">
+        <div class="kr-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></div>
+        <h3 data-i18n="kr_f1_t">Manuales ordenados</h3>
+        <p data-i18n="kr_f1_p">Manuales y procedimientos con un formato común, índice, glosario y mapa de procesos.</p>
+      </div>
+      <div class="kr-feature fade-up">
+        <div class="kr-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="6" rx="1.5"/><rect x="14" y="15" width="7" height="6" rx="1.5"/><path d="M6.5 9v4.5a1.5 1.5 0 0 0 1.5 1.5h6"/></svg></div>
+        <h3 data-i18n="kr_f2_t">Diagramas automáticos</h3>
+        <p data-i18n="kr_f2_p">El cursograma se arma a partir de los pasos, y se puede retocar arrastrando sobre el dibujo.</p>
+      </div>
+      <div class="kr-feature fade-up">
+        <div class="kr-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div>
+        <h3 data-i18n="kr_f3_t">Quién hace qué</h3>
+        <p data-i18n="kr_f3_p">Responsables de cada paso por puesto, no por persona: si alguien cambia, el proceso sigue.</p>
+      </div>
+      <div class="kr-feature fade-up">
+        <div class="kr-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg></div>
+        <h3 data-i18n="kr_f4_t">Versiones e historial</h3>
+        <p data-i18n="kr_f4_p">Cada cambio queda guardado y se puede comparar una versión con otra.</p>
+      </div>
+      <div class="kr-feature fade-up">
+        <div class="kr-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="14 3 14 9 20 9"/><path d="M9 15l2 2 4-4"/></svg></div>
+        <h3 data-i18n="kr_f5_t">PDF oficial</h3>
+        <p data-i18n="kr_f5_p">Documentos con tu marca, firmas de aprobación y un código para verificar que son auténticos.</p>
+      </div>
+      <div class="kr-feature fade-up">
+        <div class="kr-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+        <h3 data-i18n="kr_f6_t">Portal para todos</h3>
+        <p data-i18n="kr_f6_p">Un buscador simple, “tu parte”, lectura obligatoria y sugerencias, también desde el celular.</p>
+      </div>
+      <div class="kr-feature fade-up">
+        <div class="kr-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3 data-i18n="kr_f7_t">Ejecución de casos</h3>
+        <p data-i18n="kr_f7_p">Pagos, compras o altas que avanzan de puesto en puesto, con plazos y avisos.</p>
+      </div>
+      <div class="kr-feature fade-up">
+        <div class="kr-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <h3 data-i18n="kr_f8_t">Tablero e indicadores</h3>
+        <p data-i18n="kr_f8_p">Cuánto tarda cada proceso, dónde se traba y si cumple la meta que le pusiste.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Documentar ───────────────────────────────────────────── -->
+<section class="section" id="documentar">
+  <div class="container">
+    <div class="kr-duo">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="kr_doc_label">Documentar</p>
+        <h2 data-i18n="kr_doc_title">Escribí el proceso. Kratos lo dibuja.</h2>
+        <p data-i18n="kr_doc_sub">Cargás los pasos como si se los contaras a alguien nuevo. Kratos arma el diagrama, la matriz de responsables y el documento final.</p>
+        <div class="kr-checks">
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_doc1_b">Paso a paso</b> <span data-i18n="kr_doc1_s">con responsable, formularios y herramientas que se usan.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_doc2_b">Arrastrá y acomodá</b> <span data-i18n="kr_doc2_s">los pasos directamente sobre el diagrama.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_doc3_b">Matriz de responsables</b> <span data-i18n="kr_doc3_s">(quién hace, quién aprueba, a quién se consulta y a quién se informa).</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_doc4_b">Importá lo que ya tenés</b> <span data-i18n="kr_doc4_s">desde Word, PDF o diagramas de otras herramientas.</span></div></div>
+        </div>
+      </div>
+
+      <div class="kr-window fade-up" aria-hidden="true">
+        <div class="kr-window__bar"><i></i><i></i><i></i><b>kratos / PRO-ADM-004 / actividades</b></div>
+        <div class="kr-window__body">
+          <div class="kr-tabs">
+            <span class="kr-tab kr-tab--on" data-i18n="kr_mk_tab1">Actividades</span>
+            <span class="kr-tab" data-i18n="kr_mk_tab2">Cursograma</span>
+            <span class="kr-tab" data-i18n="kr_mk_raci">Responsables</span>
+          </div>
+          <div class="kr-acts">
+            <div class="kr-act"><span class="kr-act__n">01</span><span><b data-i18n="kr_mk_a1">Recibir la factura del proveedor</b><small data-i18n="kr_mk_a1s">Analista de compras · Factura</small></span><span class="kr-badge kr-badge--info" data-i18n="kr_mk_l1">Compras</span></div>
+            <div class="kr-act"><span class="kr-act__n">02</span><span><b data-i18n="kr_mk_a2">Controlar contra la orden de compra</b><small data-i18n="kr_mk_a2s">Analista de compras · Orden de compra</small></span><span class="kr-badge kr-badge--info" data-i18n="kr_mk_l1">Compras</span></div>
+            <div class="kr-act kr-act--drag"><span class="kr-act__n">03</span><span><b data-i18n="kr_mk_a3">Aprobar el pago</b><small data-i18n="kr_mk_a3s">Gerente de administración · Plazo 1 día</small></span><span class="kr-badge kr-badge--warn" data-i18n="kr_mk_l2">Gerencia</span></div>
+            <div class="kr-act"><span class="kr-act__n">04</span><span><b data-i18n="kr_mk_a4">Programar el pago</b><small data-i18n="kr_mk_a4s">Tesorero · Sistema bancario</small></span><span class="kr-badge kr-badge--ok" data-i18n="kr_mk_l3">Tesorería</span></div>
+          </div>
+          <table class="kr-raci">
+            <thead><tr><th></th><th data-i18n="kr_mk_l1">Compras</th><th data-i18n="kr_mk_l2">Gerencia</th><th data-i18n="kr_mk_l3">Tesorería</th><th data-i18n="kr_mk_r4">Contabilidad</th></tr></thead>
+            <tbody>
+              <tr><td data-i18n="kr_mk_n2">Controlar</td><td><i class="r">R</i></td><td><i class="i">I</i></td><td></td><td><i class="c">C</i></td></tr>
+              <tr><td data-i18n="kr_mk_n3">Aprobar pago</td><td><i class="i">I</i></td><td><i class="a">A</i></td><td><i class="i">I</i></td><td></td></tr>
+              <tr><td data-i18n="kr_mk_n4">Programar pago</td><td></td><td><i class="a">A</i></td><td><i class="r">R</i></td><td><i class="i">I</i></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mapa de procesos -->
+    <div class="kr-map fade-up" aria-hidden="true">
+      <div class="kr-map__head">
+        <h3 data-i18n="kr_map_title">Mapa de procesos</h3>
+        <small data-i18n="kr_map_sub">Toda la organización de un vistazo, con el estado de cada procedimiento.</small>
+      </div>
+      <div class="kr-map__rows">
+        <div class="kr-map__lbl kr-map__lbl--1" data-i18n="kr_map_r1">Estratégicos</div>
+        <div class="kr-map__chips">
+          <span class="kr-map__chip" data-i18n="kr_map_c1">Planificación anual</span>
+          <span class="kr-map__chip" data-i18n="kr_map_c2">Presupuesto</span>
+          <span class="kr-map__chip kr-map__chip--w" data-i18n="kr_map_c3">Gestión de proyectos</span>
+        </div>
+        <div class="kr-map__lbl kr-map__lbl--2" data-i18n="kr_map_r2">Operativos</div>
+        <div class="kr-map__chips">
+          <span class="kr-map__chip" data-i18n="kr_map_c4">Alta de clientes</span>
+          <span class="kr-map__chip" data-i18n="kr_map_c5">Ventas</span>
+          <span class="kr-map__chip" data-i18n="kr_map_c6">Solicitud de compra</span>
+          <span class="kr-map__chip" data-i18n="kr_mk_proc">Pago a proveedores</span>
+          <span class="kr-map__chip kr-map__chip--d" data-i18n="kr_map_c7">Atención de reclamos</span>
+          <span class="kr-map__chip" data-i18n="kr_map_c8">Logística</span>
+        </div>
+        <div class="kr-map__lbl kr-map__lbl--3" data-i18n="kr_map_r3">De soporte</div>
+        <div class="kr-map__chips">
+          <span class="kr-map__chip" data-i18n="kr_map_c9">Ingreso de personal</span>
+          <span class="kr-map__chip kr-map__chip--w" data-i18n="kr_map_c10">Reintegro de gastos</span>
+          <span class="kr-map__chip" data-i18n="kr_map_c11">Mesa de ayuda</span>
+          <span class="kr-map__chip kr-map__chip--d" data-i18n="kr_map_c12">Capacitación</span>
+        </div>
+      </div>
+      <div class="kr-map__legend">
+        <span><i style="background:var(--success)"></i><span data-i18n="kr_map_lg1">Publicado</span></span>
+        <span><i style="background:var(--warning)"></i><span data-i18n="kr_map_lg2">En revisión</span></span>
+        <span><i style="background:var(--kr-3)"></i><span data-i18n="kr_map_lg3">Borrador</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Aprobar y publicar ───────────────────────────────────── -->
+<section class="section section--tint" id="aprobar">
+  <div class="container">
+    <div class="center-head fade-up">
+      <p class="section-label" data-i18n="kr_ap_label">Aprobar y publicar</p>
+      <h2 data-i18n="kr_ap_title">Una sola versión vigente. Siempre.</h2>
+      <p data-i18n="kr_ap_sub">Nada se publica sin pasar por quien tiene que revisarlo y aprobarlo. Y lo anterior queda guardado.</p>
+    </div>
+
+    <div class="kr-flow fade-up" aria-hidden="true">
+      <div class="kr-fstep">
+        <div class="kr-fstep__dot">✎</div>
+        <h4 data-i18n="kr_ap1_t">Borrador</h4>
+        <p data-i18n="kr_ap1_p">Se redacta y se ajusta.</p>
+        <span class="kr-fstep__who"><span class="kr-av kr-av--2">LM</span>Laura M.</span>
+      </div>
+      <div class="kr-fstep">
+        <div class="kr-fstep__dot">👁</div>
+        <h4 data-i18n="kr_ap2_t">En revisión</h4>
+        <p data-i18n="kr_ap2_p">Comentarios y correcciones.</p>
+        <span class="kr-fstep__who"><span class="kr-av kr-av--3">CR</span>Carla R.</span>
+      </div>
+      <div class="kr-fstep">
+        <div class="kr-fstep__dot">✓</div>
+        <h4 data-i18n="kr_ap3_t">Aprobado</h4>
+        <p data-i18n="kr_ap3_p">Por el responsable o el directorio.</p>
+        <span class="kr-fstep__who"><span class="kr-av kr-av--1">DF</span>Diego F.</span>
+      </div>
+      <div class="kr-fstep kr-fstep--last">
+        <div class="kr-fstep__dot">★</div>
+        <h4 data-i18n="kr_ap4_t">Publicado</h4>
+        <p data-i18n="kr_ap4_p">Disponible para todos, con aviso.</p>
+        <span class="kr-fstep__who"><span class="kr-av kr-av--4">✓</span><span data-i18n="kr_ap4_w">312 personas avisadas</span></span>
+      </div>
+    </div>
+
+    <div class="kr-docs">
+      <div class="kr-card fade-up" aria-hidden="true">
+        <h3 data-i18n="kr_ver_title">Historial de versiones</h3>
+        <p data-i18n="kr_ver_sub">Qué cambió, quién lo aprobó y cuándo.</p>
+        <div class="kr-vers">
+          <div class="kr-ver kr-ver--now">
+            <span class="kr-ver__tag">v2.1</span>
+            <div><b data-i18n="kr_ver1_b">Vigente desde 14/10/2026</b><small data-i18n="kr_ver1_s">Aprobó Diego Ferreyra · Gerencia de Administración</small>
+              <div class="kr-diff"><span class="add" data-i18n="kr_ver1_d1">+1 paso</span><span class="chg" data-i18n="kr_ver1_d2">1 responsable cambiado</span></div></div>
+          </div>
+          <div class="kr-ver">
+            <span class="kr-ver__tag">v2.0</span>
+            <div><b data-i18n="kr_ver2_b">03/06/2026</b><small data-i18n="kr_ver2_s">Nuevo circuito de aprobación por montos</small>
+              <div class="kr-diff"><span class="add" data-i18n="kr_ver2_d1">+2 pasos</span><span class="del" data-i18n="kr_ver2_d2">−1 formulario</span></div></div>
+          </div>
+          <div class="kr-ver">
+            <span class="kr-ver__tag">v1.0</span>
+            <div><b data-i18n="kr_ver3_b">12/02/2025</b><small data-i18n="kr_ver3_s">Primera versión publicada</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kr-card fade-up">
+        <h3 data-i18n="kr_pdf_title">El documento oficial, listo para firmar y compartir</h3>
+        <p data-i18n="kr_pdf_sub">Kratos genera el PDF con tu marca, el diagrama, los responsables y las aprobaciones.</p>
+        <div class="kr-pdf">
+          <div class="kr-pdf__page" aria-hidden="true">
+            <div class="kr-pdf__top"><img src="favicon.svg" alt="" /><b>GRUPO ANDINO</b><em>PRO-ADM-004 · v2.1</em></div>
+            <div class="kr-pdf__h" data-i18n="kr_mk_proc">Pago a proveedores</div>
+            <div class="kr-pdf__ln" style="width:92%"></div><div class="kr-pdf__ln" style="width:78%"></div><div class="kr-pdf__ln" style="width:85%"></div>
+            <div class="kr-pdf__mini"></div>
+            <div class="kr-pdf__ln" style="width:88%"></div><div class="kr-pdf__ln" style="width:60%"></div>
+            <div class="kr-pdf__foot">
+              <div class="kr-pdf__sign"><b>✓ <span data-i18n="kr_pdf_ok">Aprobado</span></b><br/>D. Ferreyra · 14/10/2026</div>
+              <div class="kr-qr" id="kr-qr"></div>
+            </div>
+          </div>
+          <div class="kr-pdf__txt">
+            <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="kr_pdf1">Con tu logo, colores y carátula.</span></div>
+            <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="kr_pdf2">Marca de agua si una versión ya no está vigente.</span></div>
+            <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="kr_pdf3">Un código para verificar que no fue alterado.</span></div>
+            <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="kr_pdf4">Aviso automático cuando toca revisarlo.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Portal ───────────────────────────────────────────────── -->
+<section class="section" id="portal">
+  <div class="container">
+    <div class="kr-duo kr-duo--rev kr-duo--wide">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="kr_po_label">Portal de procedimientos</p>
+        <h2 data-i18n="kr_po_title">Cada persona, su parte. Y la certeza de que la leyó.</h2>
+        <p data-i18n="kr_po_sub">Un portal simple para que todos encuentren cómo se hace cada cosa, sin manuales de 80 páginas.</p>
+        <div class="kr-checks">
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_po1_b">“Tu parte”:</b> <span data-i18n="kr_po1_s">cada uno ve solo los pasos que le tocan según su puesto.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_po2_b">Lectura obligatoria</b> <span data-i18n="kr_po2_s">con confirmación y seguimiento por área.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_po3_b">Sugerencias:</b> <span data-i18n="kr_po3_s">quien hace el trabajo propone mejoras y recibe respuesta.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_po4_b">En el celular</b> <span data-i18n="kr_po4_s">y, si querés, con un portal abierto para clientes o proveedores.</span></div></div>
+        </div>
+      </div>
+
+      <div class="kr-portal fade-up" aria-hidden="true">
+        <div class="kr-phone">
+          <div class="kr-phone__screen">
+            <div class="kr-phone__top">
+              <small data-i18n="kr_ph_hi">Hola, Carla 👋</small>
+              <b data-i18n="kr_ph_title">Tus procedimientos</b>
+              <div class="kr-phone__search" data-i18n="kr_ph_search">🔍 ¿Cómo se hace…?</div>
+            </div>
+            <div class="kr-phone__body">
+              <div class="kr-phone__sec" data-i18n="kr_ph_sec1">Lectura pendiente</div>
+              <div class="kr-pitem kr-pitem--must">
+                <div><span class="kr-pitem__ico">📘</span><span><b data-i18n="kr_mk_proc">Pago a proveedores</b><small data-i18n="kr_ph_new">Nueva versión 2.1 · 4 min</small></span></div>
+                <div class="kr-phone__btn" data-i18n="kr_ph_btn">Confirmo que lo leí</div>
+              </div>
+              <div class="kr-phone__sec" data-i18n="kr_ph_sec2">Tu parte</div>
+              <div class="kr-pitem"><span class="kr-pitem__ico">🧾</span><span><b data-i18n="kr_map_c6">Solicitud de compra</b><small data-i18n="kr_ph_p1">2 pasos te tocan</small></span><span class="kr-badge kr-badge--ok">✓</span></div>
+              <div class="kr-pitem"><span class="kr-pitem__ico">👤</span><span><b data-i18n="kr_map_c4">Alta de clientes</b><small data-i18n="kr_ph_p2">1 paso te toca</small></span><span class="kr-badge kr-badge--ok">✓</span></div>
+              <div class="kr-pitem"><span class="kr-pitem__ico">✈️</span><span><b data-i18n="kr_map_c10">Reintegro de gastos</b><small data-i18n="kr_ph_p3">3 pasos te tocan</small></span><span class="kr-badge kr-badge--ok">✓</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="kr-reads">
+          <div class="kr-card">
+            <div class="kr-donut">
+              <svg viewBox="0 0 120 120">
+                <defs><linearGradient id="kr-g-donut" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F4F60"/><stop offset="1" stop-color="#3F98BA"/></linearGradient></defs>
+                <circle class="kr-donut__bg" cx="60" cy="60" r="46"/>
+                <circle class="kr-donut__fg" cx="60" cy="60" r="46"/>
+                <text class="kr-donut__val" x="60" y="63" text-anchor="middle">87%</text>
+                <text class="kr-donut__sub" x="60" y="78" text-anchor="middle" data-i18n="kr_rd_read">leído</text>
+              </svg>
+              <div><h3 data-i18n="kr_rd_title">Lecturas de la v2.1</h3><p data-i18n="kr_rd_sub">271 de 312 personas ya confirmaron. A las demás les llega un recordatorio.</p></div>
+            </div>
+          </div>
+          <div class="kr-card">
+            <div class="kr-hbars">
+              <div class="kr-hbar"><span data-i18n="kr_ar1">Comercial</span><span class="kr-hbar__track"><i style="--w:96%"></i></span><span class="num">96%</span></div>
+              <div class="kr-hbar"><span data-i18n="kr_ar2">Operaciones</span><span class="kr-hbar__track"><i style="--w:90%"></i></span><span class="num">90%</span></div>
+              <div class="kr-hbar"><span data-i18n="kr_ar3">Administración</span><span class="kr-hbar__track"><i style="--w:84%"></i></span><span class="num">84%</span></div>
+              <div class="kr-hbar"><span data-i18n="kr_mk_l3">Tesorería</span><span class="kr-hbar__track"><i class="w" style="--w:68%"></i></span><span class="num">68%</span></div>
+            </div>
+          </div>
+          <div class="kr-suggest">
+            <span class="kr-av kr-av--5">MS</span>
+            <div><p data-i18n="kr_sg_text">“Sumemos controlar el CUIT del proveedor antes de aprobar.”</p><small data-i18n="kr_sg_meta">Sugerencia de Martín Sosa · respondida y aplicada en v2.1</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Ejecución ────────────────────────────────────────────── -->
+<section class="section kr-exec" id="ejecucion">
+  <div class="container">
+    <div class="kr-duo">
+      <div class="fade-up">
+        <span class="kr-exec__badge">▶ <span data-i18n="kr_ex_badge">Ejecución de procedimientos</span></span>
+        <h2 data-i18n="kr_ex_title">Del manual a la acción: los casos reales recorren tu procedimiento</h2>
+        <p data-i18n="kr_ex_sub">Un pago, una compra, el alta de un cliente: cada caso pasa de puesto en puesto siguiendo lo que está publicado. Cada paso tiene un plazo y queda registrado quién lo hizo, cuándo y con qué datos.</p>
+        <div class="kr-checks">
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_ex1_b">Mis tareas:</b> <span data-i18n="kr_ex1_s">cada persona ve lo que le toca hoy, lo que vence y lo que le devolvieron.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_ex2_b">Avisos a tiempo:</b> <span data-i18n="kr_ex2_s">un día antes de vencer, y al superior si el paso se vence.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_ex3_b">Devolver con motivo:</b> <span data-i18n="kr_ex3_s">si falta algo, el caso vuelve al paso anterior y queda escrito por qué.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_ex4_b">Reasignar sin perder nada:</b> <span data-i18n="kr_ex4_s">titulares y suplentes por puesto, para cubrir vacaciones y licencias.</span></div></div>
+        </div>
+      </div>
+
+      <div class="kr-window fade-up" aria-hidden="true">
+        <div class="kr-window__bar"><i></i><i></i><i></i><b>kratos / mis-tareas</b></div>
+        <div class="kr-window__body">
+          <div class="kr-proc-head">
+            <div><div class="kr-eyebrow" data-i18n="kr_tk_eyebrow">Gerente de administración</div><div class="kr-title-sm" data-i18n="kr_tk_title">Mis tareas</div></div>
+            <span class="kr-av kr-av--1">DF</span>
+          </div>
+          <div class="kr-tasks__kpis">
+            <div class="kr-tkpi"><small data-i18n="kr_tk_k1">Pendientes</small><strong class="num">7</strong></div>
+            <div class="kr-tkpi kr-tkpi--w"><small data-i18n="kr_tk_k2">Vencen hoy</small><strong class="num">2</strong></div>
+            <div class="kr-tkpi kr-tkpi--d"><small data-i18n="kr_tk_k3">Vencidas</small><strong class="num">1</strong></div>
+            <div class="kr-tkpi kr-tkpi--ok"><small data-i18n="kr_tk_k4">En término</small><strong class="num">94%</strong></div>
+          </div>
+          <div class="kr-task" style="--c:var(--danger)"><span><b data-i18n="kr_tk1_b">Revisar alta de proveedor</b><small><span class="num">EJ-0409</span> · Transportes Río Negro SA</small></span><span class="kr-task__r"><span class="kr-badge kr-badge--danger" data-i18n="kr_tk1_d">Vencida hace 1 día</span><span class="kr-task__btn" data-i18n="kr_tk_btn">Resolver</span></span></div>
+          <div class="kr-task" style="--c:var(--warning)"><span><b data-i18n="kr_mk_a3">Aprobar el pago</b><small><span class="num">EJ-0418</span> · Insumos del Litoral SRL · <span class="num">$ 1.284.500</span></small></span><span class="kr-task__r"><span class="kr-badge kr-badge--warn" data-i18n="kr_tk2_d">Vence hoy</span><span class="kr-task__btn" data-i18n="kr_tk_btn">Resolver</span></span></div>
+          <div class="kr-task" style="--c:var(--kr-2)"><span><b data-i18n="kr_tk3_b">Aprobar solicitud de compra</b><small><span class="num">EJ-0431</span> · <span data-i18n="kr_tk3_s">Notebooks para Comercial</span></small></span><span class="kr-task__r"><span class="kr-badge kr-badge--info" data-i18n="kr_tk3_d">Vence mañana</span><span class="kr-task__btn" data-i18n="kr_tk_btn">Resolver</span></span></div>
+          <div class="kr-task" style="--c:var(--text-muted)"><span><b><span data-i18n="kr_tk4_b">Devuelta:</span> <span data-i18n="kr_mk_a3">Aprobar el pago</span></b><small><span class="num">EJ-0402</span> · <span data-i18n="kr_tk4_s">“Falta la constancia de CBU”</span></small></span><span class="kr-task__r"><span class="kr-badge kr-badge--mute" data-i18n="kr_tk4_d">En 2 días</span><span class="kr-task__btn" data-i18n="kr_tk_btn">Resolver</span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ficha de una ejecución -->
+    <div class="kr-card kr-run fade-up" aria-hidden="true">
+      <div class="kr-run__head">
+        <div>
+          <div class="kr-eyebrow"><span data-i18n="kr_run_eyebrow">Ejecución</span> · <span class="num">EJ-2026-0418</span></div>
+          <div class="kr-title-sm"><span data-i18n="kr_mk_proc">Pago a proveedores</span> — Insumos del Litoral SRL</div>
+        </div>
+        <div class="kr-run__data">
+          <span><span data-i18n="kr_run_d1">Importe</span> <b class="num">$ 1.284.500</b></span>
+          <span><span data-i18n="kr_run_d2">Factura</span> <b class="num">A 0003-00012345</b></span>
+          <span><span data-i18n="kr_run_d3">Iniciada</span> <b class="num">27/10/2026</b></span>
+        </div>
+      </div>
+      <div class="kr-stepper">
+        <div class="kr-sstep kr-sstep--done"><span class="kr-sstep__dot">✓</span><div><b data-i18n="kr_mk_n1">Recibir factura</b><small>Martín Sosa · 27/10 09:12</small></div></div>
+        <div class="kr-sstep kr-sstep--done"><span class="kr-sstep__dot">✓</span><div><b data-i18n="kr_mk_a2">Controlar contra la orden de compra</b><small>Laura Méndez · 27/10 15:40</small></div></div>
+        <div class="kr-sstep kr-sstep--now"><span class="kr-sstep__dot">3</span><div><b data-i18n="kr_mk_n3">Aprobar pago</b><small data-i18n="kr_run_s3">Gerencia · Diego Ferreyra</small><span class="kr-badge kr-badge--warn" data-i18n="kr_run_s3b">Vence hoy 18:00</span></div></div>
+        <div class="kr-sstep"><span class="kr-sstep__dot">4</span><div><b data-i18n="kr_mk_n4">Programar pago</b><small data-i18n="kr_run_s4">Tesorería · plazo 1 día</small></div></div>
+        <div class="kr-sstep"><span class="kr-sstep__dot">5</span><div><b data-i18n="kr_mk_n5">Pagar y avisar</b><small data-i18n="kr_run_s5">Tesorería · plazo 2 días</small></div></div>
+      </div>
+    </div>
+
+    <div class="kr-exec__extras">
+      <div class="kr-xcard fade-up">
+        <div class="kr-xcard__art" aria-hidden="true">
+          <div class="kr-mail"><b data-i18n="kr_xm_subj">Te toca: Aprobar el pago · EJ-0418</b><div data-i18n="kr_xm_body">Hola Diego, hay un paso esperándote. Vence hoy.</div><span class="kr-mail__btn" data-i18n="kr_xm_btn">Abrir y resolver →</span></div>
+        </div>
+        <h4 data-i18n="kr_x1_t">Participan todos, aunque no tengan usuario</h4>
+        <p data-i18n="kr_x1_p">Cada responsable recibe un enlace personal por mail para resolver su paso, sin ingresar al sistema.</p>
+      </div>
+      <div class="kr-xcard fade-up">
+        <div class="kr-xcard__art" aria-hidden="true">
+          <div class="kr-sheet">
+            <span class="h">#</span><span class="h" data-i18n="kr_xs_h1">Proveedor</span><span class="h" data-i18n="kr_run_d1">Importe</span><span class="h" data-i18n="kr_xs_h3">Estado</span>
+            <span>1</span><span>Insumos Litoral</span><span>1.284.500</span><span class="ok"> OK</span>
+            <span>2</span><span>Gráfica Norte</span><span>312.000</span><span class="ok"> OK</span>
+            <span>3</span><span>Frío Sur</span><span>—</span><span class="er" data-i18n="kr_xs_err"> Falta</span>
+          </div>
+        </div>
+        <h4 data-i18n="kr_x2_t">Muchos casos de una vez</h4>
+        <p data-i18n="kr_x2_p">Subí una planilla y se inician todas las filas correctas. Las que tienen errores te las marca antes.</p>
+      </div>
+      <div class="kr-xcard fade-up">
+        <div class="kr-xcard__art" aria-hidden="true">
+          <div class="kr-cal">
+            <span class="h">L</span><span class="h">M</span><span class="h">M</span><span class="h">J</span><span class="h">V</span><span class="h">S</span><span class="h">D</span>
+            <span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span class="we">17</span><span class="we">18</span>
+            <span>19</span><span class="fer">20</span><span>21</span><span class="due">22</span><span>23</span><span class="we">24</span><span class="we">25</span>
+            <span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span class="we">31</span><span class="we">1</span>
+          </div>
+        </div>
+        <h4 data-i18n="kr_x3_t">Plazos en días hábiles</h4>
+        <p data-i18n="kr_x3_p">Con el calendario de tu empresa: feriados y días no laborables no cuentan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Tablero ──────────────────────────────────────────────── -->
+<section class="section" id="tablero">
+  <div class="container">
+    <div class="center-head fade-up">
+      <p class="section-label" data-i18n="kr_db_label">Tablero e indicadores</p>
+      <h2 data-i18n="kr_db_title">Mirá cómo funcionan tus procesos de verdad</h2>
+      <p data-i18n="kr_db_sub">Cuántos casos entran, cuánto tardan contra lo esperado, en qué paso se traban y si cumplen la meta.</p>
+    </div>
+
+    <div class="kr-dash fade-up" aria-hidden="true">
+      <div class="kr-window__bar"><i></i><i></i><i></i><b>kratos / tablero-de-procesos</b></div>
+      <div class="kr-dash__body">
+        <div class="kr-dash__filters">
+          <span class="kr-select" data-i18n="kr_mk_manual">Manual de Administración</span>
+          <span class="kr-select" data-i18n="kr_db_f2">Octubre 2026</span>
+          <span class="kr-select" data-i18n="kr_db_f3">Todos los procedimientos</span>
+        </div>
+        <div class="kr-kpis">
+          <div class="kr-kpi"><small data-i18n="kr_db_k1">Iniciadas</small><strong class="num">342</strong><em class="up" data-i18n="kr_db_k1e">▲ 12% vs. sept.</em></div>
+          <div class="kr-kpi"><small data-i18n="kr_db_k2">Terminadas</small><strong class="num">311</strong><em class="up" data-i18n="kr_db_k2e">▲ 8% vs. sept.</em></div>
+          <div class="kr-kpi"><small data-i18n="kr_db_k3">Tiempo medio</small><strong class="num" data-i18n="kr_db_k3v">2,8 días</strong><em class="mu" data-i18n="kr_db_k3e">esperado: 3 días</em></div>
+          <div class="kr-kpi"><small data-i18n="kr_db_k4">En término</small><strong class="num">91%</strong><em class="dn" data-i18n="kr_db_k4e">▼ 2 pts vs. sept.</em></div>
+        </div>
+
+        <div class="kr-dash__row">
+          <div class="kr-panel">
+            <div class="kr-panel__h"><b data-i18n="kr_db_ch1">Casos terminados por semana</b>
+              <span class="kr-legend"><span><i style="background:var(--kr-2)"></i><span data-i18n="kr_db_lg1">En término</span></span><span><i style="background:var(--warning)"></i><span data-i18n="kr_db_lg2">Demorados</span></span></span>
+            </div>
+            <svg class="kr-svg" viewBox="0 0 360 160">
+              <line class="kr-grid" x1="34" y1="15" x2="356" y2="15"/><line class="kr-grid" x1="34" y1="55" x2="356" y2="55"/><line class="kr-grid" x1="34" y1="95" x2="356" y2="95"/><line class="kr-grid" x1="34" y1="135" x2="356" y2="135"/>
+              <text class="kr-axis" x="28" y="138" text-anchor="end">0</text><text class="kr-axis" x="28" y="98" text-anchor="end">20</text><text class="kr-axis" x="28" y="58" text-anchor="end">40</text><text class="kr-axis" x="28" y="18" text-anchor="end">60</text>
+              <g fill="#3F98BA">
+                <rect class="kr-chart-bar" x="40"  y="67" width="22" height="68" rx="3"/>
+                <rect class="kr-chart-bar" x="80"  y="59" width="22" height="76" rx="3"/>
+                <rect class="kr-chart-bar" x="120" y="63" width="22" height="72" rx="3"/>
+                <rect class="kr-chart-bar" x="160" y="51" width="22" height="84" rx="3"/>
+                <rect class="kr-chart-bar" x="200" y="55" width="22" height="80" rx="3"/>
+                <rect class="kr-chart-bar" x="240" y="45" width="22" height="90" rx="3"/>
+                <rect class="kr-chart-bar" x="280" y="39" width="22" height="96" rx="3"/>
+                <rect class="kr-chart-bar" x="320" y="31" width="22" height="104" rx="3"/>
+              </g>
+              <g fill="#D08A2E">
+                <rect class="kr-chart-bar" x="40"  y="58" width="22" height="8"  rx="2"/>
+                <rect class="kr-chart-bar" x="80"  y="48" width="22" height="10" rx="2"/>
+                <rect class="kr-chart-bar" x="120" y="56" width="22" height="6"  rx="2"/>
+                <rect class="kr-chart-bar" x="160" y="38" width="22" height="12" rx="2"/>
+                <rect class="kr-chart-bar" x="200" y="48" width="22" height="6"  rx="2"/>
+                <rect class="kr-chart-bar" x="240" y="36" width="22" height="8"  rx="2"/>
+                <rect class="kr-chart-bar" x="280" y="32" width="22" height="6"  rx="2"/>
+                <rect class="kr-chart-bar" x="320" y="26" width="22" height="4"  rx="2"/>
+              </g>
+              <g class="kr-axis" text-anchor="middle">
+                <text x="51" y="152">S1</text><text x="91" y="152">S2</text><text x="131" y="152">S3</text><text x="171" y="152">S4</text><text x="211" y="152">S5</text><text x="251" y="152">S6</text><text x="291" y="152">S7</text><text x="331" y="152">S8</text>
+              </g>
+            </svg>
+          </div>
+          <div class="kr-panel">
+            <div class="kr-panel__h"><b data-i18n="kr_db_ch2">¿Dónde se traba?</b><span class="kr-legend" data-i18n="kr_db_ch2s">tiempo medio por paso</span></div>
+            <div class="kr-stuck">
+              <div class="kr-hbar"><span data-i18n="kr_mk_n1">Recibir factura</span><span class="kr-hbar__track"><i style="--w:30%"></i></span><span class="num" data-i18n="kr_db_t1">0,4 d</span></div>
+              <div class="kr-hbar"><span data-i18n="kr_mk_n2">Controlar</span><span class="kr-hbar__track"><i style="--w:55%"></i></span><span class="num" data-i18n="kr_db_t2">0,9 d</span></div>
+              <div class="kr-hbar"><span data-i18n="kr_mk_n3">Aprobar pago</span><span class="kr-hbar__track"><i class="d" style="--w:100%"></i></span><span class="num" style="color:var(--danger)" data-i18n="kr_db_t3">1,9 d</span></div>
+              <div class="kr-hbar"><span data-i18n="kr_mk_n4">Programar pago</span><span class="kr-hbar__track"><i style="--w:45%"></i></span><span class="num" data-i18n="kr_db_t4">0,8 d</span></div>
+              <div class="kr-hbar"><span data-i18n="kr_mk_n5">Pagar y avisar</span><span class="kr-hbar__track"><i class="w" style="--w:62%"></i></span><span class="num" data-i18n="kr_db_t5">1,1 d</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="kr-inds">
+          <div class="kr-ind">
+            <div class="kr-ind__top"><b data-i18n="kr_in1_t">Pagos en término</b><span class="kr-badge kr-badge--ok" data-i18n="kr_in_ok">En meta</span></div>
+            <strong class="num">92%</strong><small data-i18n="kr_in1_g">Meta: 90% o más</small>
+            <svg class="kr-spark" viewBox="0 0 120 34" preserveAspectRatio="none"><path class="goal" d="M0 12H120"/><path stroke="#2F8F5B" d="M0 22L17 20L34 24L51 16L68 14L85 12L102 10L120 8"/></svg>
+          </div>
+          <div class="kr-ind">
+            <div class="kr-ind__top"><b data-i18n="kr_in2_t">Devoluciones</b><span class="kr-badge kr-badge--warn" data-i18n="kr_in_risk">En riesgo</span></div>
+            <strong class="num">6%</strong><small data-i18n="kr_in2_g">Meta: 5% o menos</small>
+            <svg class="kr-spark" viewBox="0 0 120 34" preserveAspectRatio="none"><path class="goal" d="M0 18H120"/><path stroke="#D08A2E" d="M0 24L17 22L34 20L51 22L68 18L85 16L102 15L120 14"/></svg>
+          </div>
+          <div class="kr-ind">
+            <div class="kr-ind__top"><b data-i18n="kr_in3_t">Tiempo de aprobación</b><span class="kr-badge kr-badge--danger" data-i18n="kr_in_off">Fuera de meta</span></div>
+            <strong class="num" data-i18n="kr_db_t3b">1,9 días</strong><small data-i18n="kr_in3_g">Meta: 1 día o menos</small>
+            <svg class="kr-spark" viewBox="0 0 120 34" preserveAspectRatio="none"><path class="goal" d="M0 22H120"/><path stroke="#C2493D" d="M0 20L17 21L34 18L51 16L68 14L85 12L102 9L120 8"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Integraciones ────────────────────────────────────────── -->
+<section class="section section--tint" id="integraciones">
+  <div class="container">
+    <div class="kr-duo">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="kr_in_label">Integraciones</p>
+        <h2 data-i18n="kr_int_title">Se conecta con los sistemas que ya usás</h2>
+        <p data-i18n="kr_int_sub">Tu sistema de gestión, la mesa de entradas o el portal de proveedores pueden iniciar casos en Kratos, completar pasos y enterarse de lo que pasa, sin cargar nada dos veces.</p>
+        <div class="kr-checks">
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_int1_b">Casos que se inician solos</b> <span data-i18n="kr_int1_s">cuando entra una factura o una solicitud en otro sistema.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_int2_b">Avisos hacia afuera</b> <span data-i18n="kr_int2_s">cuando un caso avanza, se demora o termina.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_int3_b">Diagramas compatibles</b> <span data-i18n="kr_int3_s">con otras herramientas de modelado de procesos (BPMN).</span></div></div>
+        </div>
+      </div>
+      <div class="kr-hub fade-up" aria-hidden="true">
+        <svg class="kr-svg" viewBox="0 0 520 340">
+          <defs><linearGradient id="kr-g-hub" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F4F60"/><stop offset="1" stop-color="#3F98BA"/></linearGradient></defs>
+          <path id="kr-l1" class="kr-hub__link" d="M160 66L210 140"/>
+          <path id="kr-l2" class="kr-hub__link" d="M360 66L310 140"/>
+          <path id="kr-l3" class="kr-hub__link" d="M145 170H200"/>
+          <path id="kr-l4" class="kr-hub__link" d="M320 170H375"/>
+          <path id="kr-l5" class="kr-hub__link" d="M160 274L210 200"/>
+          <path id="kr-l6" class="kr-hub__link" d="M310 200L360 274"/>
+          <circle class="kr-hub__pulse" r="4"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#kr-l1"/></animateMotion></circle>
+          <circle class="kr-hub__pulse" r="4"><animateMotion dur="2.8s" repeatCount="indefinite" begin="-1s"><mpath href="#kr-l3"/></animateMotion></circle>
+          <circle class="kr-hub__pulse" r="4"><animateMotion dur="2.6s" repeatCount="indefinite" begin="-.5s"><mpath href="#kr-l5"/></animateMotion></circle>
+          <circle class="kr-hub__pulse" r="4"><animateMotion dur="2.5s" repeatCount="indefinite" begin="-1.6s"><mpath href="#kr-l6"/></animateMotion></circle>
+          <circle class="kr-hub__pulse" r="4"><animateMotion dur="3s" repeatCount="indefinite" begin="-2s" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#kr-l2"/></animateMotion></circle>
+          <circle class="kr-hub__pulse" r="4"><animateMotion dur="2.7s" repeatCount="indefinite" begin="-.8s"><mpath href="#kr-l4"/></animateMotion></circle>
+
+          <rect x="190" y="135" width="140" height="70" rx="18" fill="url(#kr-g-hub)"/>
+          <text x="260" y="168" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">Kratos</text>
+          <text x="260" y="188" text-anchor="middle" font-size="10" fill="#9FD3E8" data-i18n="kr_hub_c">tus procesos</text>
+
+          <g class="kr-hub__node"><rect x="20" y="34" width="140" height="44" rx="12"/><text x="32" y="61" class="ico">🏢</text><text x="58" y="60" data-i18n="kr_hub1">ERP / gestión</text></g>
+          <g class="kr-hub__node"><rect x="360" y="34" width="140" height="44" rx="12"/><text x="372" y="61" class="ico">📥</text><text x="398" y="60" data-i18n="kr_hub2">Mesa de entradas</text></g>
+          <g class="kr-hub__node"><rect x="5" y="148" width="140" height="44" rx="12"/><text x="17" y="175" class="ico">🤝</text><text x="43" y="174" data-i18n="kr_hub3">Proveedores</text></g>
+          <g class="kr-hub__node"><rect x="375" y="148" width="140" height="44" rx="12"/><text x="387" y="175" class="ico">✉️</text><text x="413" y="174" data-i18n="kr_hub4">Correo y avisos</text></g>
+          <g class="kr-hub__node"><rect x="20" y="262" width="140" height="44" rx="12"/><text x="32" y="289" class="ico">📊</text><text x="58" y="288" data-i18n="kr_hub5">Planillas Excel</text></g>
+          <g class="kr-hub__node"><rect x="360" y="262" width="140" height="44" rx="12"/><text x="372" y="289" class="ico">🔀</text><text x="398" y="288" data-i18n="kr_hub6">Diagramas BPMN</text></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── IA ───────────────────────────────────────────────────── -->
+<section class="section kr-ai" id="ia">
+  <div class="container">
+    <div class="kr-ai__grid">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="kr_ai_label">Inteligencia artificial</p>
+        <h2 data-i18n="kr_ai_title">Un asistente que conoce tus procesos</h2>
+        <p data-i18n="kr_ai_sub">Preguntá como le preguntarías a un compañero con experiencia. Y dejá que te ayude a escribir lo que todavía no está escrito.</p>
+        <div class="kr-ai__list">
+          <div class="kr-ai__item"><div class="kr-ai__item-icon">💬</div><div><h4 data-i18n="kr_ai1_t">Respuestas al instante</h4><p data-i18n="kr_ai1_p">“¿Cómo doy de alta un proveedor?” y te contesta con los pasos y el enlace al procedimiento.</p></div></div>
+          <div class="kr-ai__item"><div class="kr-ai__item-icon">📄</div><div><h4 data-i18n="kr_ai2_t">De un documento a un procedimiento</h4><p data-i18n="kr_ai2_p">Subí un Word o un PDF y te propone los pasos, los responsables y el diagrama.</p></div></div>
+          <div class="kr-ai__item"><div class="kr-ai__item-icon">📚</div><div><h4 data-i18n="kr_ai3_t">Manuales completos</h4><p data-i18n="kr_ai3_p">Arma la estructura de un manual entero a partir de lo que ya tenés.</p></div></div>
+          <div class="kr-ai__item"><div class="kr-ai__item-icon">🔒</div><div><h4 data-i18n="kr_ai4_t">Con tus reglas</h4><p data-i18n="kr_ai4_p">Solo ve lo que cada usuario puede ver, y nada se publica sin que una persona lo revise.</p></div></div>
+        </div>
+      </div>
+
+      <div class="fade-up" aria-hidden="true">
+        <div class="kr-chat">
+          <div class="kr-chat__head"><span class="kr-chat__ico">✦</span><span data-i18n="kr_chat_title">Asistente de Kratos</span></div>
+          <div class="kr-msg kr-msg--user" data-i18n="kr_chat_q">¿Qué tengo que hacer para pagarle a un proveedor nuevo?</div>
+          <div class="kr-msg kr-msg--bot">
+            <span data-i18n="kr_chat_a">Primero tiene que estar dado de alta. Después:</span>
+            <ol>
+              <li data-i18n="kr_chat_a1">Compras recibe y controla la factura.</li>
+              <li data-i18n="kr_chat_a2">Gerencia aprueba el pago (plazo: 1 día).</li>
+              <li data-i18n="kr_chat_a3">Tesorería lo programa y avisa al proveedor.</li>
+            </ol>
+            <a href="#documentar" data-i18n="kr_chat_link">Ver “Pago a proveedores” v2.1 →</a>
+          </div>
+          <div class="kr-msg kr-msg--user" data-i18n="kr_chat_q2">Armame el procedimiento de reintegro de gastos con este Word.</div>
+          <div class="kr-conv">
+            <div class="kr-conv__doc"><em>DOCX</em><i style="width:90%"></i><i style="width:70%"></i><i style="width:84%"></i><i style="width:60%"></i><i style="width:78%"></i></div>
+            <div class="kr-conv__arrow">✦</div>
+            <div class="kr-conv__out">
+              <span><b>1</b><span data-i18n="kr_conv1">Cargar el gasto</span></span>
+              <span><b>2</b><span data-i18n="kr_conv2">Adjuntar comprobantes</span></span>
+              <span><b>3</b><span data-i18n="kr_conv3">Aprobar (jefe directo)</span></span>
+              <span><b>4</b><span data-i18n="kr_conv4">Reintegrar</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Para quién ───────────────────────────────────────────── -->
+<section class="section" id="para-quien">
+  <div class="container">
+    <div class="center-head fade-up">
+      <p class="section-label" data-i18n="kr_who_label">Para quién</p>
+      <h2 data-i18n="kr_who_title">Para organizaciones que quieren trabajar ordenadas</h2>
+      <p data-i18n="kr_who_sub">Empresas, entidades financieras, organismos públicos y pymes en crecimiento.</p>
+    </div>
+    <div class="kr-audience">
+      <div class="kr-aud fade-up"><div class="kr-aud__icon">🧭</div><h3 data-i18n="kr_who1_t">Organización y procesos</h3><p data-i18n="kr_who1_p">Quienes escriben y mantienen los procedimientos.</p></div>
+      <div class="kr-aud fade-up"><div class="kr-aud__icon">⭐</div><h3 data-i18n="kr_who2_t">Calidad y mejora</h3><p data-i18n="kr_who2_p">Medir, detectar cuellos de botella y mejorar.</p></div>
+      <div class="kr-aud fade-up"><div class="kr-aud__icon">⚙️</div><h3 data-i18n="kr_who3_t">Operaciones</h3><p data-i18n="kr_who3_p">Casos del día a día que tienen que salir en tiempo.</p></div>
+      <div class="kr-aud fade-up"><div class="kr-aud__icon">🎓</div><h3 data-i18n="kr_who4_t">Recursos humanos</h3><p data-i18n="kr_who4_p">Inducción de ingresantes y puestos claros.</p></div>
+      <div class="kr-aud fade-up"><div class="kr-aud__icon">📈</div><h3 data-i18n="kr_who5_t">Dirección</h3><p data-i18n="kr_who5_p">Una vista clara de cómo funciona la organización.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Organización / seguridad ─────────────────────────────── -->
+<section class="section section--tint">
+  <div class="container">
+    <div class="kr-split">
+      <div class="kr-split__panel fade-up">
+        <p class="section-label" data-i18n="kr_org_label">Tu organización</p>
+        <h2 data-i18n="kr_org_title">Áreas, puestos y personas, siempre al día</h2>
+        <p data-i18n="kr_org_sub">Los procedimientos se apoyan en tu estructura real. Si alguien cambia de puesto, sus tareas pasan a quien lo reemplaza.</p>
+        <div class="kr-org" aria-hidden="true">
+          <div class="kr-org__lvl"><div class="kr-org__box kr-org__box--top"><span data-i18n="kr_org_b1">Dirección general</span><small>Ana Quiroga</small></div></div>
+          <div class="kr-org__lvl">
+            <div class="kr-org__box"><span data-i18n="kr_ar3">Administración</span><small>Diego Ferreyra</small></div>
+            <div class="kr-org__box"><span data-i18n="kr_ar1">Comercial</span><small>Carla Ruiz</small></div>
+            <div class="kr-org__box"><span data-i18n="kr_ar2">Operaciones</span><small>Pablo Ibáñez</small></div>
+          </div>
+          <div class="kr-org__lvl">
+            <div class="kr-org__box"><span data-i18n="kr_mk_l1">Compras</span><small data-i18n="kr_org_s1">3 puestos</small></div>
+            <div class="kr-org__box"><span data-i18n="kr_mk_l3">Tesorería</span><small data-i18n="kr_org_s2">2 puestos</small></div>
+            <div class="kr-org__box"><span data-i18n="kr_mk_r4">Contabilidad</span><small data-i18n="kr_org_s3">4 puestos</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="kr-split__panel kr-split__panel--tint fade-up">
+        <p class="section-label" data-i18n="kr_sec_label">Seguridad</p>
+        <h2 data-i18n="kr_sec_title">Tu información, protegida y bajo control</h2>
+        <p data-i18n="kr_sec_sub">Hecho por Plexia con los mismos estándares que aplicamos en organizaciones exigentes.</p>
+        <div class="kr-checks">
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_sec1_b">Permisos por rol:</b> <span data-i18n="kr_sec1_s">cada uno ve y hace solo lo que corresponde.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_sec2_b">Todo queda registrado:</b> <span data-i18n="kr_sec2_s">quién cambió qué y cuándo.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_sec3_b">Ingreso seguro,</b> <span data-i18n="kr_sec3_s">con verificación en dos pasos.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_sec4_b">En la nube o en tus servidores,</b> <span data-i18n="kr_sec4_s">como prefiera tu organización.</span></div></div>
+          <div class="kr-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b data-i18n="kr_sec5_b">Varias empresas,</b> <span data-i18n="kr_sec5_s">cada una con sus datos separados.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Implementación ───────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="kr-impl">
+      <div class="fade-up">
+        <p class="section-label" data-i18n="kr_impl_label">Implementación</p>
+        <h2 data-i18n="kr_impl_title">No empezás de cero</h2>
+        <p data-i18n="kr_impl_sub">Te acompañamos desde el primer procedimiento hasta que tu equipo lo usa solo.</p>
+      </div>
+      <div class="kr-impl__cards">
+        <div class="kr-impl__card fade-up"><h4 data-i18n="kr_impl1_t">Plantillas listas</h4><p data-i18n="kr_impl1_p">Procedimientos modelo para los procesos más comunes, para adaptar en minutos.</p></div>
+        <div class="kr-impl__card fade-up"><h4 data-i18n="kr_impl2_t">Migración de lo existente</h4><p data-i18n="kr_impl2_p">Pasamos tus manuales actuales a Kratos, con ayuda de la IA.</p></div>
+        <div class="kr-impl__card fade-up"><h4 data-i18n="kr_impl3_t">Empresa de demostración</h4><p data-i18n="kr_impl3_p">Para probar y capacitar sin tocar los datos reales.</p></div>
+        <div class="kr-impl__card fade-up"><h4 data-i18n="kr_impl4_t">Capacitación y soporte</h4><p data-i18n="kr_impl4_p">Manual de uso, ayuda en cada pantalla y el equipo de Plexia cerca.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ──────────────────────────────────────────────────── -->
+<section class="section section--tint" id="preguntas">
+  <div class="container">
+    <div class="center-head fade-up">
+      <p class="section-label" data-i18n="kr_faq_label">Preguntas frecuentes</p>
+      <h2 data-i18n="kr_faq_title">Lo que todos nos preguntan</h2>
+    </div>
+    <div class="kr-faq">
+      <details class="fade-up"><summary data-i18n="kr_q1">¿Tengo que cargar todo de cero?</summary><p data-i18n="kr_a1">No. Podés partir de tus documentos en Word o PDF, de diagramas que ya tengas o de nuestras plantillas. El asistente de IA te ayuda a pasarlos al formato de Kratos.</p></details>
+      <details class="fade-up"><summary data-i18n="kr_q2">¿Es necesario que todos tengan usuario?</summary><p data-i18n="kr_a2">No. El portal puede ser abierto para toda la organización y, en la ejecución, quien no tiene usuario recibe un enlace por mail para resolver su paso.</p></details>
+      <details class="fade-up"><summary data-i18n="kr_q3">¿Tengo que usar la ejecución de casos desde el principio?</summary><p data-i18n="kr_a3">No. Muchas organizaciones empiezan documentando y publicando, y después activan la ejecución en los procesos que más les importan, de a uno.</p></details>
+      <details class="fade-up"><summary data-i18n="kr_q4">¿Funciona en el celular?</summary><p data-i18n="kr_a4">Sí. Kratos es 100% web y se adapta a cualquier pantalla: se pueden leer procedimientos, confirmar lecturas y resolver tareas desde el teléfono.</p></details>
+      <details class="fade-up"><summary data-i18n="kr_q5">¿Puedo personalizarlo con nuestra marca?</summary><p data-i18n="kr_a5">Sí. Tu logo y tus datos aparecen en las pantallas y en los documentos PDF que genera Kratos.</p></details>
+      <details class="fade-up"><summary data-i18n="kr_q6">¿Está en otros idiomas?</summary><p data-i18n="kr_a6">Kratos está disponible en español e inglés, y cada usuario elige el suyo.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ──────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <h2 data-i18n="kr_final_title">Conocé Kratos en 30 minutos</h2>
+      <p data-i18n="kr_final_text">Te mostramos la plataforma con un proceso como los tuyos y respondemos todas tus preguntas.</p>
+      <div class="kr-cta__actions">
+        <a href="mailto:contacto@plexia.com.ar?subject=Demo%20Kratos" class="btn btn-light" data-i18n="kr_cta_demo">Pedí una demo</a>
+        <a href="mailto:contacto@plexia.com.ar?subject=Consulta%20Kratos" class="btn btn-outline kr-cta__ghost" data-i18n="kr_final_btn2">Hacé una consulta</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ───────────────────────────────────────────────── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <p style="font-family:var(--font-alt);font-size:1.4rem;font-weight:700;color:#fff;max-width:none;">Kratos</p>
+        <p style="margin-top:.5rem;" data-i18n="kr_footer_desc">Procesos y procedimientos.</p>
+        <p style="margin-top:.5rem;" data-i18n="kr_footer_by">Un producto de Plexia.</p>
+      </div>
+      <div>
+        <p class="footer__heading" data-i18n="kr_footer_product">Producto</p>
+        <ul class="footer__links">
+          <li><a href="#como-funciona" data-i18n="kr_nav_how">Cómo funciona</a></li>
+          <li><a href="#documentar"    data-i18n="kr_nav_doc">Documentar</a></li>
+          <li><a href="#portal"        data-i18n="kr_nav_portal">Portal</a></li>
+          <li><a href="#ejecucion"     data-i18n="kr_nav_exec">Ejecución</a></li>
+          <li><a href="#tablero"       data-i18n="kr_nav_dash">Tablero</a></li>
+          <li><a href="#ia"            data-i18n="kr_nav_ai">Inteligencia artificial</a></li>
+          <li><a href="#preguntas"     data-i18n="kr_nav_faq">Preguntas</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__heading" data-i18n="kr_footer_contact">Contacto</p>
+        <ul class="footer__links">
+          <li><a href="mailto:contacto@plexia.com.ar">contacto@plexia.com.ar</a></li>
+          <li><a href="https://www.plexia.com.ar">www.plexia.com.ar</a></li>
+          <li><span data-i18n="kr_footer_loc">Argentina</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="kr_footer_copy">© 2026 Plexia. Todos los derechos reservados.</span>
+      <span>Kratos · by Plexia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="kratos.js?v=20261031"></script>
+</body>
+</html>
